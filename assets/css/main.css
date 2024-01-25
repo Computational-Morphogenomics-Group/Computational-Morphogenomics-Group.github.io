@@ -110,14 +110,14 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #e44c65;
+		/* border-bottom: dotted 1px; */
+		color: rgba(255, 255, 255, 0.75);
 		text-decoration: none;
 	}
 
 		a:hover {
 			color: #e44c65 !important;
-			border-bottom-color: transparent;
+			/* border-bottom-color: transparent; */
 		}
 
 	strong, b {
@@ -2555,9 +2555,12 @@ input, select, textarea {
 			}
 
 		.image.fit {
-			display: block;
+			display: flex;
 			margin: 0 0 2em 0;
 			width: 100%;
+			aspect-ratio: 1;
+			justify-content: center;
+			align-items: center;
 		}
 
 			.image.fit img {
