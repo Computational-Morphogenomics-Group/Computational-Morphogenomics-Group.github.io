@@ -24,6 +24,7 @@ function swap_up() {
 	// 	document.getElementById("logo").style.opacity = "0";
 	// 	logo.style.pointerEvents = "none";
 	// }, 250)
+	document.getElementById.style.color = "#e44c65";
 }
 
 (function($) {
@@ -33,11 +34,13 @@ function swap_up() {
 
 		var observer = new IntersectionObserver(function(entries) {
 			if(entries[0].isIntersecting === false) {
+				document.getElementById("abt").style.color = "#e44c65";
 				document.getElementById("logo").style.opacity = "1";
 				logo.style.pointerEvents = "auto";
 				document.getElementById("title").style.opacity = "0";
 				document.getElementById("subtitle").style.opacity = "0";
 			} else {
+				document.getElementById("abt").style.color = "rgba(255, 255, 255, 0.75)";
 				document.getElementById("logo").style.opacity = "0";
 				document.getElementById("title").style.opacity = "1";
 				document.getElementById("subtitle").style.opacity = "1";
