@@ -3377,8 +3377,6 @@ input, select, textarea {
 	}
 
 	#header, .header {
-		/* background: rgba(39, 40, 51, 0.95);
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25); */
 		cursor: default;
 		height: 3.5em;
 		left: 0;
@@ -3387,6 +3385,10 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 100;
+	}
+
+	.header {
+		z-index: 15;
 	}
 
 		#header h1 {
@@ -3457,7 +3459,22 @@ input, select, textarea {
 		position: absolute;
 	}
 
+	#nav {
+		padding-right: 50px;
+		z-index: 100;
+	}
+
+	#title, #subtitle {
+		transition-duration: 0.25s;
+	}
+
 /* Banner */
+
+	#logo {
+		transition-duration: 0.25s;
+		opacity: 0;
+		pointer-events: none;
+	}
 
 	#banner {
 		background-attachment: fixed;
