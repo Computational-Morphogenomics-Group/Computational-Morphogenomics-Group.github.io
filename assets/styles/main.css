@@ -86,7 +86,7 @@ input, select, textarea {
 		background: #1c1d26;
 	}
 
-	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	body.preload *, body.preload *:before, body.preload *:after {
 		-moz-animation: none !important;
 		-webkit-animation: none !important;
 		-ms-animation: none !important;
@@ -605,7 +605,7 @@ input, select, textarea {
 			z-index: -1;
 		}
 
-		body.landing.is-preload:before {
+		body.landing.preload:before {
 			-moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			-webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			-ms-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
@@ -613,7 +613,7 @@ input, select, textarea {
 			z-index: 100001;
 		}
 
-		body.landing.is-preload:after {
+		body.landing.preload:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -3372,7 +3372,7 @@ input, select, textarea {
 
 /* Header */
 
-	#page-wrapper {
+	#wrapper {
 		padding-top: 3.5em;
 	}
 
@@ -3447,7 +3447,7 @@ input, select, textarea {
 		background-image: linear-gradient(top, rgba(39, 40, 51, 0.975), rgba(39, 40, 51, 0.975)), url("assets/images/overlay.png");
 	}
 
-	body.landing #page-wrapper {
+	body.landing #wrapper {
 		padding-top: 0;
 	}
 
@@ -3869,7 +3869,7 @@ input, select, textarea {
 
 		/* Nav */
 
-			#page-wrapper {
+			#wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -4028,7 +4028,7 @@ input, select, textarea {
 						width: 6.25em;
 					}
 
-			body.navPanel-visible #page-wrapper {
+			body.navPanel-visible #wrapper {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
