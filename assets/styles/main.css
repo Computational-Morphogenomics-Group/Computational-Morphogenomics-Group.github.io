@@ -3555,6 +3555,22 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
+	#grid {
+		text-align: center;
+	}
+
+	#grid .image {
+		margin-bottom: 10px;
+	}
+
+	#grid h4 {
+		margin-bottom: 0;
+	}
+
+	#grid p {
+		margin-bottom: 10px;
+	}
+
 /* Footer */
 
 	#footer {
