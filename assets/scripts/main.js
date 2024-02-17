@@ -35,16 +35,21 @@ function swap_up() {
 		var observer = new IntersectionObserver(function(entries) {
 			if(entries[0].isIntersecting === false) {
 				document.getElementById("goto").style.color = "#e44c65";
-				document.getElementById("logo").style.opacity = "1";
-				logo.style.pointerEvents = "auto";
-				document.getElementById("title").style.opacity = "0";
-				document.getElementById("subtitle").style.opacity = "0";
+				document.getElementById("logo").classList.remove("hidden");
+				document.getElementById("title").classList.remove("shown");
+				document.getElementById("subtitle").classList.remove("shown");
+				document.getElementById("logo").classList.add("shown");
+				document.getElementById("title").classList.add("hidden");
+				document.getElementById("subtitle").classList.add("hidden");
+
 			} else {
 				document.getElementById("goto").style.color = "rgba(255, 255, 255, 0.75)";
-				document.getElementById("logo").style.opacity = "0";
-				document.getElementById("title").style.opacity = "1";
-				document.getElementById("subtitle").style.opacity = "1";
-				logo.style.pointerEvents = "none";
+				document.getElementById("logo").classList.remove("shown");
+				document.getElementById("title").classList.remove("hidden");
+				document.getElementById("subtitle").classList.remove("hidden");
+				document.getElementById("logo").classList.add("hidden");
+				document.getElementById("title").classList.add("shown");
+				document.getElementById("subtitle").classList.add("shown");
 			}
 		}, { threshold: [1] });
 		

@@ -3489,14 +3489,22 @@ body.landing #header {
 	color: #e44c65;
 }
 
+.shown {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
 #title, #subtitle {
 	transition-duration: 0.25s;
 }
 
 #logo {
 	transition-duration: 0.25s;
-	opacity: 0;
-	pointer-events: none;
 }
 
 #banner {
