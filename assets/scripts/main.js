@@ -1,75 +1,53 @@
-/*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-function swap_down() {
-	// document.getElementById("header").style.transitionDuration = "0.5s"
-	// setTimeout(function () {
-	// 	document.getElementById("header").style.backgroundColor = "rgba(39, 40, 51, 0.975)";
-	// 	document.getElementById("header").style.boxShadow = "0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25)";
-	// }, 250)
-	// setTimeout(function () {
-	// 	document.getElementById("logo").style.opacity = "1";
-	// 	logo.style.pointerEvents = "auto";
-	// }, 500);
+function hide() {
+	for(const id of arguments) {
+		element = document.getElementById(id);
+		element.classList.remove("shown");
+		element.classList.add("hidden");
+	}
 }
 
-function swap_up() {
-	// setTimeout(function () {
-	// 	// document.getElementById("header").style.transitionDuration = "1s"
-	// 	document.getElementById("header").style.backgroundColor = "rgba(39, 40, 51, 0)";
-	// 	document.getElementById("header").style.boxShadow = "0 0.25em 0.5em 0 rgba(0, 0, 0, 0)";
-	// 	document.getElementById("logo").style.opacity = "0";
-	// 	logo.style.pointerEvents = "none";
-	// }, 250)
-	document.getElementById.style.color = "#e44c65";
+function show() {
+	for(const id of arguments) {
+		element = document.getElementById(id);
+		element.classList.remove("hidden");
+		element.classList.add("shown");
+	}
+}
+
+function remove(id) {
+	element = document.getElementById(id);
+	element.remove();
 }
 
 (function($) {
+	let	$window = $(window), $body = $('body');
 
-	var	$window = $(window),
-		$body = $('body');
+	$window.on('load', function() {
+		window.setTimeout(function() {
+			$body.removeClass('preload');
+		}, 100);
+	});
 
-		var observer = new IntersectionObserver(function(entries) {
-			if(entries[0].isIntersecting === false) {
-				document.getElementById("goto").style.color = "#e44c65";
-				document.getElementById("logo").classList.remove("hidden");
-				document.getElementById("title").classList.remove("shown");
-				document.getElementById("subtitle").classList.remove("shown");
-				document.getElementById("logo").classList.add("shown");
-				document.getElementById("title").classList.add("hidden");
-				document.getElementById("subtitle").classList.add("hidden");
+	let observer = new IntersectionObserver(function(entries) {
+		if(entries[0].isIntersecting === false) {
+			document.getElementById("goto").style.color = "#e44c65";
+			hide("title", "subtitle");
+			show("logo");
+		} else {
+			document.getElementById("goto").style.color = "rgba(255, 255, 255, 0.75)";
+			hide("logo");
+			show("title", "subtitle");
+		}
+	}, { threshold: [1] });
+	observer.observe(document.querySelector("#title"));
 
-			} else {
-				document.getElementById("goto").style.color = "rgba(255, 255, 255, 0.75)";
-				document.getElementById("logo").classList.remove("shown");
-				document.getElementById("title").classList.remove("hidden");
-				document.getElementById("subtitle").classList.remove("hidden");
-				document.getElementById("logo").classList.add("hidden");
-				document.getElementById("title").classList.add("shown");
-				document.getElementById("subtitle").classList.add("shown");
-			}
-		}, { threshold: [1] });
-		
-		observer.observe(document.querySelector("#title"));
-
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ]
-		});
-
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('preload');
-			}, 100);
-		});
+	breakpoints({
+		xlarge:   [ '1281px',  '1680px' ],
+		large:    [ '981px',   '1280px' ],
+		medium:   [ '737px',   '980px'  ],
+		small:    [ '481px',   '736px'  ],
+		xsmall:   [ null,      '480px'  ]
+	});
 
 	// Touch mode.
 		if (browser.mobile)

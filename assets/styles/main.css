@@ -2601,6 +2601,7 @@ input[type="radio"] + label:before {
 
 .image.left img, .image.right img {
 	width: 100%;
+	aspect-ratio: 1;
 }
 
 .image.fit {
@@ -4107,4 +4108,8 @@ body.is-touch #banner {
 		margin: 0;
 		padding: 0;
 	}
+}
+
+.inactive {
+	pointer-events: none;
 }
