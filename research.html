@@ -155,7 +155,6 @@
 			// Keyup event for search
 			$(`#search-papers`).on('keyup', function(){
 				var val = $(this).val()
-				console.log("Value:", val)
 
 				var data = searchTables(papersArray, val)
 				buildTables(data, yearsArray)
