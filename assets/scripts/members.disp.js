@@ -1,0 +1,90 @@
+// Active members go here, alumni go below
+				
+const ACTIVE = [
+    {
+        name : "Bianca Dumitrascu", 
+        title : "Group Leader",
+        image : "assets/images/members/bianca-dumitrascu.png", 
+    },
+    {
+        name : "Maria-Cristiana Gîrjău", 
+        title : "Doctoral Student",
+        image : "assets/images/members/maria-cristiana-girjau.png", 
+    }, 
+    {
+        name : "Claire He", 
+        title : "Doctoral Student",
+        image : "assets/images/members/claire-he.png", 
+    }, 
+    {
+        name : "Ruiyange He", 
+        title : "Doctoral Student",
+        image : "assets/images/members/ruiyang-he.png", 
+    }, 
+    {
+        name : "Jose Pomarino Nima", 
+        title : "Doctoral Student",
+        image : "assets/images/members/jose-pomarino-nima.png", 
+    },
+    {
+        name : "Likun Lin", 
+        title : "Masters Student",
+        image : "assets/images/members/likun-lin.png", 
+    }, 
+    {
+        name : "Harry Kabodha", 
+        title : "Masters Student",
+        image : "assets/images/members/harry-kabodha.png", 
+    }, 
+    {
+        name : "Özgür Yılmaz Beker", 
+        title : "Research Assistant",
+        image : "assets/images/members/ozgur-yilmaz-beker.png", 
+    }, 
+    {
+        name : "Craig Fouts", 
+        title : "Masters Student",
+        image : "assets/images/members/craig-fouts.png", 
+    }, 
+    
+]
+
+// Alumni go here
+const ALUMNI = [
+    {
+        name : "Marshmallow", 
+        title : "Researcher Emerita",
+        image : "assets/images/members/marshmallow.png", 
+    },
+
+]
+
+
+buildMembers(ACTIVE, "grid-members")
+buildMembers(ALUMNI, "grid-alumni")
+
+// No need to update below this line if everything is working !
+
+//############################################################//
+
+
+// Function to build projects
+function buildMembers(data, grid_id){
+    var active_grid = document.getElementById(grid_id)
+    active_grid.innerHTML = ""
+    
+    for (var i = 0; i < data.length; i++){
+
+        var block = 
+        `
+        <a class="col-3 col-6-xsmall" href="">
+			<span class="image fit"><img src=${data[i].image} alt=""/></span>
+			<h4>${data[i].name}</h4>
+			<p>${data[i].title}</p>
+		</a>
+        `
+
+        active_grid.innerHTML += block			 
+    }
+
+}
