@@ -1,39 +1,41 @@
-// New projects go here, then need a separate page at assets/projects/<projectname>.html (change this to read query?)
+// New projects go here, then need extra details for their separate page at projectpages.disp.js
+// Need to update both or the link will be broken!
+// projIDs of entries in this file and projectpages.disp.js should match for correct display!
 				
 const PROJECTS = [
     {
+        projID : "esc",
         name : "Embedded Spatial Clustering", 
-        link : "https://github.com/Computational-Morphogenomics-Group/sceLDA",
         image : "assets/images/spine.png", 
         shortdesc : "In Progress..."
     },
     {
+        projID : "exgen",
         name : "Explainability + Genomics", 
-        link : "https://pypi.org/project/scGeneFit/",
         image : "assets/images/regions.png", 
         shortdesc : "In Progress..."
     },
     {
+        projID : "physml",
         name : "Physics + Machine Learning", 
-        link : "about:blank" ,
         image : "assets/images/physics.png" , 
         shortdesc : "In Progress..."
     },
     {
+        projID : "vitrovsvivo",
         name : "In Vitro vs In Vivo Systems", 
-        link : "about:blank",
         image : "assets/images/dish.jpeg", 
         shortdesc : "In Progress..."
     },
     {
+        projID : "mechanotranscriptomics",
         name : "Mechanics + Trancriptomics", 
-        link : "about:blank",
         image : "assets/images/transcriptomics.jpeg", 
         shortdesc : "In Progress..."
     },
     {
+        projID : "perturbference",
         name : "Inference + Perturbation", 
-        link : "about:blank",
         image : "assets/images/robustness.jpeg", 
         shortdesc : "In Progress..."
     },
@@ -45,6 +47,8 @@ buildProjects(PROJECTS)
 
 // No need to update below this line if everything is working !
 
+//############################################################//
+//############################################################//
 //############################################################//
 
 
@@ -88,7 +92,7 @@ function buildProjects(projects){
 
         var block = 
         `
-        <a class="col-6 col-6-xsmall" href=${projects[i].link} target="_blank" style="text-align: justify;"><span class="image left"><img src=${projects[i].image} alt=""/></span>
+        <a class="col-6 col-6-xsmall" href="projectpages.html?projID=${projects[i].projID}" target="_blank" style="text-align: justify;"><span class="image left"><img src=${projects[i].image} alt=""/></span>
             <h4 style="text-align: left;">${projects[i].name}</h4>
             ${projects[i].shortdesc}
         </a>
