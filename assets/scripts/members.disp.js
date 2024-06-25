@@ -21,16 +21,7 @@ const ACTIVE = [
         title : "Doctoral Student",
         image : "assets/images/members/ruiyang-he.png", 
     }, 
-    {
-        name : "Jose Pomarino Nima", 
-        title : "Doctoral Student",
-        image : "assets/images/members/jose-pomarino-nima.png", 
-    },
-    {
-        name : "Likun Lin", 
-        title : "Masters Student",
-        image : "assets/images/members/likun-lin.png", 
-    }, 
+    
     {
         name : "Harry Kabodha", 
         title : "Masters Student",
@@ -55,6 +46,11 @@ const ALUMNI = [
         name : "Marshmallow", 
         title : "Researcher Emerita",
         image : "assets/images/members/marshmallow.png", 
+    },
+	{
+        name : "Jose Pomarino Nima", 
+        title : "Masters Student",
+        image : "assets/images/members/jose-pomarino-nima.png", 
     },
 
 ]
