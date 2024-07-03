@@ -6,12 +6,7 @@ const ACTIVE = [
         title : "Group Leader",
         image : "assets/images/members/bianca-dumitrascu.png", 
     },
-    {
-        name : "Maria-Cristiana Gîrjău", 
-        title : "Doctoral Student",
-        image : "assets/images/members/maria-cristiana-girjau.png", 
-    }, 
-    {
+{
         name : "Claire He", 
         title : "Doctoral Student",
         image : "assets/images/members/claire-he.png", 
