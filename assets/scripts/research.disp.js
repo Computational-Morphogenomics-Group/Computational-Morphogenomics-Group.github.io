@@ -159,7 +159,7 @@
 
 					var block = 
 							`
-							<div class="col-1 col-12" style="text-align: justify;"><a href=${data[i].link} target="_blank"><span class="image left" style="width: 10%"><img src="assets/images/placeholder.png" alt=""/></span>
+							<div class="col-1 col-12" style="text-align: justify;"><a href=${data[i].link} target="_blank"><span class="image left" style="width: 10%"><img src="assets/images/projects/placeholder.png" alt=""/></span>
 								<h4 style="text-align: left;">${data[i].name}</h4>
 								${data[i].authors}
 								<br>

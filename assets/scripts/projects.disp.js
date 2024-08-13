@@ -6,37 +6,37 @@ const PROJECTS = [
     {
         projID : "esc",
         name : "Embedded Spatial Clustering", 
-        image : "assets/images/spine.png", 
+        image : "assets/images/projects/spine.png", 
         shortdesc : "In Progress..."
     },
     {
         projID : "exgen",
         name : "Explainability + Genomics", 
-        image : "assets/images/regions.png", 
+        image : "assets/images/projects/regions.png", 
         shortdesc : "In Progress..."
     },
     {
         projID : "physml",
         name : "Physics + Machine Learning", 
-        image : "assets/images/physics.png" , 
+        image : "assets/images/projects/physics.png" , 
         shortdesc : "In Progress..."
     },
     {
         projID : "vitrovsvivo",
         name : "In Vitro vs In Vivo Systems", 
-        image : "assets/images/dish.jpeg", 
+        image : "assets/images/projects/dish.jpeg", 
         shortdesc : "In Progress..."
     },
     {
         projID : "mechanotranscriptomics",
         name : "Mechanics + Trancriptomics", 
-        image : "assets/images/transcriptomics.jpeg", 
+        image : "assets/images/projects/transcriptomics.jpeg", 
         shortdesc : "In Progress..."
     },
     {
         projID : "perturbference",
         name : "Inference + Perturbation", 
-        image : "assets/images/robustness.jpeg", 
+        image : "assets/images/projects/robustness.jpeg", 
         shortdesc : "In Progress..."
     },
     

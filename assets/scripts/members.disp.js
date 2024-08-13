@@ -12,7 +12,7 @@ const ACTIVE = [
         image : "assets/images/members/claire-he.png", 
     }, 
     {
-        name : "Ruiyange He", 
+        name : "Ruiyang He", 
         title : "Doctoral Student",
         image : "assets/images/members/ruiyang-he.png", 
     }, 
@@ -31,7 +31,13 @@ const ACTIVE = [
         name : "Craig Fouts", 
         title : "Masters Student",
         image : "assets/images/members/craig-fouts.png", 
-    }, 
+    },
+    {
+        name : "Agnieszka Geras", 
+        title : "Postdoctoral Researcher",
+        image : "assets/images/members/agnieszka-geras.jpg", 
+    },
+
     
 ]
 

@@ -2,7 +2,7 @@ const PROJINFO = [
     {
         projID : "esc",
         name : "Embedded Spatial Clustering", 
-        image : "assets/images/spine.png",
+        image : "assets/images/projects/spine.png",
         longdesc : 
         `
         This is how a long description would look like. The rest will be lipsum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -22,35 +22,35 @@ const PROJINFO = [
         projID : "exgen",
         name : "Explainability + Genomics", 
         link : "https://pypi.org/project/scGeneFit/",
-        image : "assets/images/regions.png", 
+        image : "assets/images/projects/regions.png", 
         longdesc : "In Progress..."
     },
     {
         projID : "physml",
         name : "Physics + Machine Learning", 
         link : "about:blank" ,
-        image : "assets/images/physics.png" , 
+        image : "assets/images/projects/physics.png" , 
         longdesc : "In Progress..."
     },
     {
         projID : "vitrovsvivo",
         name : "In Vitro vs In Vivo Systems", 
         link : "about:blank",
-        image : "assets/images/dish.jpeg", 
+        image : "assets/images/projects/dish.jpeg", 
         longdesc : "In Progress..."
     },
     {
         projID : "mechanotranscriptomics",
         name : "Mechanics + Trancriptomics", 
         link : "about:blank",
-        image : "assets/images/transcriptomics.jpeg", 
+        image : "assets/images/projects/transcriptomics.jpeg", 
         longdesc : "In Progress..."
     },
     {
         projID : "perturbference",
         name : "Inference + Perturbation", 
         link : "about:blank",
-        image : "assets/images/robustness.jpeg", 
+        image : "assets/images/projects/robustness.jpeg", 
         longdesc : "In Progress..."
     },
     
