@@ -95,7 +95,7 @@ function buildProjPage(projinfo){
     template.innerHTML = 
     `
     <h2 id="proj-name">Oooops</h2>
-		<div class="col-6 col-6" style="text-align: justify;"><span class="image left"><img src="assets/images/butterfly.png" alt=""></span>
+		<div class="col-6 col-6" style="text-align: justify;"><span class="image left"><img src="assets/images/projects/butterfly.png" alt=""></span>
             <p>The project you searched for does not exist!</p>	
 	    </div>
     `
