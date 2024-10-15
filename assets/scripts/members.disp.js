@@ -6,7 +6,12 @@ const ACTIVE = [
         title : "Group Leader",
         image : "assets/images/members/bianca-dumitrascu.png", 
     },
-{
+    {
+        name : "Agnieszka Geras", 
+        title : "Postdoctoral Researcher",
+        image : "assets/images/members/agnieszka-geras.jpg", 
+    },
+    {
         name : "Claire He", 
         title : "Doctoral Student",
         image : "assets/images/members/claire-he.png", 
@@ -16,16 +21,15 @@ const ACTIVE = [
         title : "Doctoral Student",
         image : "assets/images/members/ruiyang-he.png", 
     }, 
-    
+    {
+        name : "Mia Dai", 
+        title : "Doctoral Student",
+        image : "assets/images/members/mia-dai.jpeg", 
+    }, 
     {
         name : "Harry Kabodha", 
         title : "Masters Student",
         image : "assets/images/members/harry-kabodha.png", 
-    }, 
-    {
-        name : "Özgür Yılmaz Beker", 
-        title : "Research Assistant",
-        image : "assets/images/members/ozgur-yilmaz-beker.png", 
     }, 
     {
         name : "Craig Fouts", 
@@ -33,10 +37,16 @@ const ACTIVE = [
         image : "assets/images/members/craig-fouts.png", 
     },
     {
-        name : "Agnieszka Geras", 
-        title : "Postdoctoral Researcher",
-        image : "assets/images/members/agnieszka-geras.jpg", 
+        name : "Özgür Yılmaz Beker", 
+        title : "Research Assistant",
+        image : "assets/images/members/ozgur-yilmaz-beker.png", 
     },
+    {
+        name : "Jiahui Zhu", 
+        title : "Undergraduate Student",
+        image : "assets/images/members/jiahui-zhu.jpg", 
+    },
+
 
     
 ]
