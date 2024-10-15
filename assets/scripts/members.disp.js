@@ -25,6 +25,16 @@ const ACTIVE = [
         name : "Mia Dai", 
         title : "Doctoral Student",
         image : "assets/images/members/mia-dai.jpeg", 
+    },
+    {
+        name : "Ting Chen", 
+        title : "Doctoral Student",
+        image : "assets/images/members/ting-chen.jpg", 
+    }, 
+    {
+        name : "Michael Pressler", 
+        title : "Doctoral Student",
+        image : "assets/images/members/michael-pressler.jpeg", 
     }, 
     {
         name : "Harry Kabodha", 
