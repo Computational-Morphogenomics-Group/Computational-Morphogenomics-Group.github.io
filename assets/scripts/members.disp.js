@@ -20,32 +20,38 @@ const ACTIVE = [
         name : "Ruiyang He", 
         title : "Doctoral Student",
         image : "assets/images/members/ruiyang-he.png", 
-    }, 
+    },
+    {
+        name : "Tianji Yu", 
+        title : "Doctoral Student",
+        image : "assets/images/members/tianji-yu.png", 
+    },  
     {
         name : "Mia Dai", 
-        title : "Doctoral Student",
+        title : "Doctoral Student (Rotating)",
         image : "assets/images/members/mia-dai.jpeg", 
     },
     {
-        name : "Ting Chen", 
-        title : "Doctoral Student",
-        image : "assets/images/members/ting-chen.jpg", 
-    }, 
-    {
         name : "Michael Pressler", 
-        title : "Doctoral Student",
+        title : "Doctoral Student (Rotating)",
         image : "assets/images/members/michael-pressler.jpeg", 
     }, 
     {
-        name : "Harry Kabodha", 
-        title : "Masters Student",
-        image : "assets/images/members/harry-kabodha.png", 
+        name : "Ting Chen", 
+        title : "Doctoral Student (Rotating)",
+        image : "assets/images/members/ting-chen.jpg", 
     }, 
     {
         name : "Craig Fouts", 
         title : "Masters Student",
         image : "assets/images/members/craig-fouts.png", 
     },
+    {
+        name : "Harry Kabodha", 
+        title : "Masters Student",
+        image : "assets/images/members/harry-kabodha.png", 
+    }, 
+    
     {
         name : "Özgür Yılmaz Beker", 
         title : "Research Assistant",
@@ -63,17 +69,11 @@ const ACTIVE = [
 
 // Alumni go here
 const ALUMNI = [
-    {
-        name : "Marshmallow", 
-        title : "Researcher Emerita",
-        image : "assets/images/members/marshmallow.png", 
-    },
 	{
         name : "Jose Pomarino Nima", 
         title : "Masters Student",
         image : "assets/images/members/jose-pomarino-nima.png", 
     },
-
 ]
 
 
