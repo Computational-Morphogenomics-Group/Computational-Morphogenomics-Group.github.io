@@ -47,12 +47,6 @@ const ACTIVE = [
         image : "assets/images/members/craig-fouts.png", 
     },
     {
-        name : "Harry Kabodha", 
-        title : "Masters Student",
-        image : "assets/images/members/harry-kabodha.png", 
-    }, 
-    
-    {
         name : "Özgür Yılmaz Beker", 
         title : "Research Assistant",
         image : "assets/images/members/ozgur-yilmaz-beker.png", 
@@ -62,9 +56,6 @@ const ACTIVE = [
         title : "Undergraduate Student",
         image : "assets/images/members/jiahui-zhu.jpg", 
     },
-
-
-    
 ]
 
 // Alumni go here
@@ -74,6 +65,11 @@ const ALUMNI = [
         title : "Masters Student",
         image : "assets/images/members/jose-pomarino-nima.png", 
     },
+    {
+        name : "Harry Kabodha", 
+        title : "Masters Student",
+        image : "assets/images/members/harry-kabodha.png", 
+    },  
 ]
 
 
