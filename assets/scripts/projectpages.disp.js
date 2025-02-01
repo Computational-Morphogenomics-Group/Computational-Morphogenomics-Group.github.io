@@ -2,7 +2,7 @@ const PROJINFO = [
     {
         projID : "stgen",
         name : "Maps of the Morphing Cell: Spatial & Temporal Genomics", 
-        image : "assets/images/projects/spine.png",
+        image : "assets/images/projects/placeholder.png",
         longdesc : 
         `
         How do cells know where they are and where they’re going?
