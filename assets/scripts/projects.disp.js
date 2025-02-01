@@ -6,13 +6,13 @@ const PROJECTS = [
     {
         projID : "stgen",
         name : "Maps of the Morphing Cell: Spatial & Temporal Genomics", 
-        image : "assets/images/projects/spine.png", 
+        image : "assets/images/projects/stgen.png", 
         shortdesc : "How do cells know where they are and where they’re going?"
     },
     {
         projID : "regen",
         name : "Statistics of self-organization: Development, Wound Healing & Regeneration", 
-        image : "assets/images/projects/regions.png", 
+        image : "assets/images/projects/regen.png", 
         shortdesc : "Why can some creatures regrow limbs while others can’t even fix a scratch properly?"
     },
     {
@@ -24,7 +24,7 @@ const PROJECTS = [
     {
         projID : "intgen",
         name : "Interpretable Machine Learning: Making Sense of Messy Data", 
-        image : "assets/images/projects/dish.jpeg", 
+        image : "assets/images/projects/intgen.jpeg", 
         shortdesc : "Can AI help us understand biology without turning into a black box?"
     },
     {
@@ -36,7 +36,7 @@ const PROJECTS = [
     {
         projID : "predbio",
         name : "Predictive Biology: Learning from Data to Anticipate Outcomes", 
-        image : "assets/images/projects/robustness.jpeg", 
+        image : "assets/images/projects/predbio.jpeg", 
         shortdesc : "Can we use data to predict how biology unfolds?"
     },
     
