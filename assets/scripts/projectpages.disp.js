@@ -10,42 +10,53 @@ const PROJINFO = [
 	We build computational maps of cellular identity and movement, using spatial transcriptomics and temporal modeling to track 
 	how cells make decisions about their fate. Whether it’s a regenerating limb or a developing embryo, we aim to decode 
 	the blueprints that guide cell migration and organization.
-        `
+        `.
+	papers : [
+            { title: "MarkerMap: nonlinear marker selection for single-cell studies (2024)", link: "https://doi.org/10.1038/s41540-024-00345-6" },
+            { title: "Patches: A Representation Learning framework for Decoding Shared and Condition-Specific Transcriptional Programs in Wound Healing (2024)", link: "https://www.biorxiv.org/content/10.1101/2024.12.23.630186" },
+            { title: "A computational pipeline for spatial mechano-transcriptomics (2023)", link: "https://www.biorxiv.org/content/10.1101/2023.08.03.551894" },
+            { title: "In silico tissue generation and power analysis for spatial omics (2023)", link: "https://doi.org/10.1038/s41592-023-01889-5" }
+        ]	    
     },
     {
         projID : "exgen",
         name : "Explainability + Genomics", 
         link : "https://pypi.org/project/scGeneFit/",
         image : "assets/images/projects/regions.png", 
-        longdesc : "In Progress..."
+        longdesc : "In Progress...",
+	papers: [] // Empty array if no papers for this project
     },
     {
         projID : "physml",
         name : "Physics + Machine Learning", 
         link : "about:blank" ,
         image : "assets/images/projects/physics.png" , 
-        longdesc : "In Progress..."
+        longdesc : "In Progress...",
+	papers: [] // Empty array if no papers for this project
     },
     {
         projID : "vitrovsvivo",
         name : "In Vitro vs In Vivo Systems", 
         link : "about:blank",
         image : "assets/images/projects/dish.jpeg", 
-        longdesc : "In Progress..."
+        longdesc : "In Progress...",
+	papers: [] // Empty array if no papers for this project
     },
     {
         projID : "mechanotranscriptomics",
         name : "Mechanics + Trancriptomics", 
         link : "about:blank",
         image : "assets/images/projects/transcriptomics.jpeg", 
-        longdesc : "In Progress..."
+        longdesc : "In Progress...",
+	papers: [] // Empty array if no papers for this project
     },
     {
         projID : "perturbference",
         name : "Inference + Perturbation", 
         link : "about:blank",
         image : "assets/images/projects/robustness.jpeg", 
-        longdesc : "In Progress..."
+        longdesc : "In Progress...",
+	papers: [] // Empty array if no papers for this project
     },
     
 ]
@@ -71,18 +82,35 @@ function getQueryVariable(variable){
 function buildProjPage(projinfo){
     var projID = getQueryVariable("projID")
     var template = document.getElementById("proj-body")
+    if (!template) {
+    console.error("Error: Could not find the element with ID 'proj-body'");
+    return;
+}
 
     for (var i = 0; i < projinfo.length ; i++){
         if (projinfo[i].projID == projID){
+	    let papersHTML = "";
+            
+            // Check if there are relevant papers
+            if (projinfo[i].papers && projinfo[i].papers.length > 0) {
+                papersHTML += `<h3>Relevant Papers:</h3><ul>`;
+                projinfo[i].papers.forEach(paper => {
+                    papersHTML += `<li><i class="fas fa-book-open"></i> <a href="${paper.link}" target="_blank">${paper.title}</a></li>`;
+                });
+                papersHTML += `</ul>`;
+            }
+
+	
             template.innerHTML = 
             `
             <h2>${projinfo[i].name}</h2>
                 <div class="col-6 col-6" style="text-align: justify;"><span class="image left"><img src=${projinfo[i].image} alt=""></span>
                     <p>${projinfo[i].longdesc}</p>
+		    ${papersHTML} 
                 </div>
             `
 
-            return 0
+            return 
         }   
     }
 
