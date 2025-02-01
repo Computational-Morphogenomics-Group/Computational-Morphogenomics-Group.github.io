@@ -12,7 +12,7 @@ const PROJINFO = [
 	the blueprints that guide cell migration and organization
         `,
 	papers : [
-            { title: "MarkerMap: nonlinear marker selection for single-cell studies (2024)", link: "https://doi.org/10.1038/s41540-024-00345-6" },
+            { title: "MarkerMap: nonlinear marker selection for single-cell studies (2024)", link: "https://doi.org/10.1038/s41540-024-00339-3" },
             { title: "Patches: A Representation Learning framework for Decoding Shared and Condition-Specific Transcriptional Programs in Wound Healing (2024)", link: "https://www.biorxiv.org/content/10.1101/2024.12.23.630186" },
             { title: "A computational pipeline for spatial mechano-transcriptomics (2023)", link: "https://www.biorxiv.org/content/10.1101/2023.08.03.551894" },
             { title: "In silico tissue generation and power analysis for spatial omics (2023)", link: "https://doi.org/10.1038/s41592-023-01889-5" }
@@ -92,7 +92,7 @@ function buildProjPage(projinfo){
             if (projinfo[i].papers && projinfo[i].papers.length > 0) {
                 papersHTML += `<h3>Relevant Papers:</h3><ul>`;
                 projinfo[i].papers.forEach(paper => {
-                    papersHTML += `<li><i class="fas fa-book-open"></i> <a href="${paper.link}" target="_blank">${paper.title}</a></li>`;
+                    papersHTML += `<li style="margin-bottom: 5px;"><i class="fas fa-book-open"></i> <a href="${paper.link}" target="_blank">${paper.title}</a></li>`;
                 });
                 papersHTML += `</ul>`;
             }
