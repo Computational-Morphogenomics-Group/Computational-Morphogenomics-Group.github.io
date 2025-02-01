@@ -6,7 +6,7 @@ const PROJECTS = [
     {
         projID : "stgen",
         name : "Maps of the Morphing Cell: Spatial & Temporal Genomics", 
-        image : "assets/images/projects/stgen.png", 
+        image : "assets/images/projects/placeholder.png", 
         shortdesc : "How do cells know where they are and where they’re going?"
     },
     {
