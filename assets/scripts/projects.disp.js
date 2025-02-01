@@ -4,40 +4,40 @@
 				
 const PROJECTS = [
     {
-        projID : "esc",
-        name : "Embedded Spatial Clustering", 
+        projID : "stgen",
+        name : "Maps of the Morphing Cell: Spatial & Temporal Genomics", 
         image : "assets/images/projects/spine.png", 
-        shortdesc : "In Progress..."
+        shortdesc : "How do cells know where they are and where they’re going?"
     },
     {
-        projID : "exgen",
-        name : "Explainability + Genomics", 
+        projID : "regen",
+        name : "Statistics of self-organization: Development, Wound Healing & Regeneration", 
         image : "assets/images/projects/regions.png", 
-        shortdesc : "In Progress..."
+        shortdesc : "Why can some creatures regrow limbs while others can’t even fix a scratch properly?"
     },
     {
         projID : "physml",
-        name : "Physics + Machine Learning", 
+        name : "The Physics of Proliferating Active Matter: Forces, Flows & Structure", 
         image : "assets/images/projects/physics.png" , 
-        shortdesc : "In Progress..."
+        shortdesc : "What happens when cells push, pull, and squeeze their way through tissues?"
     },
     {
-        projID : "vitrovsvivo",
-        name : "In Vitro vs In Vivo Systems", 
+        projID : "intgen",
+        name : "Interpretable Machine Learning: Making Sense of Messy Data", 
         image : "assets/images/projects/dish.jpeg", 
-        shortdesc : "In Progress..."
+        shortdesc : "Can AI help us understand biology without turning into a black box?"
     },
     {
-        projID : "mechanotranscriptomics",
-        name : "Mechanics + Trancriptomics", 
+        projID : "expgen",
+        name : "Designing for Discovery: Experimental Design and Causal Reasoning", 
         image : "assets/images/projects/transcriptomics.jpeg", 
-        shortdesc : "In Progress..."
+        shortdesc : "How do we design experiments that uncover both patterns and mechanisms?"
     },
     {
-        projID : "perturbference",
-        name : "Inference + Perturbation", 
+        projID : "predbio",
+        name : "Predictive Biology: Learning from Data to Anticipate Outcomes", 
         image : "assets/images/projects/robustness.jpeg", 
-        shortdesc : "In Progress..."
+        shortdesc : "Can we use data to predict how biology unfolds?"
     },
     
 ]
