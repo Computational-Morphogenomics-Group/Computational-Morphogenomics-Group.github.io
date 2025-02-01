@@ -1,21 +1,15 @@
 const PROJINFO = [
     {
-        projID : "esc",
-        name : "Embedded Spatial Clustering", 
+        projID : "stgen",
+        name : "Maps of the Morphing Cell: Spatial & Temporal Genomics", 
         image : "assets/images/projects/spine.png",
         longdesc : 
         `
-        This is how a long description would look like. The rest will be lipsum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        In elementum enim nec lacus rutrum, vitae venenatis est cursus. Morbi mollis sed ex ut egestas. Cras ut dolor turpis. 
-        Aliquam blandit, sapien et consequat maximus, orci dui mollis nulla, id tempus tellus turpis et nunc.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elit ex, aliquam eget efficitur eget, tempor vitae tellus. 
-        Morbi nec neque eleifend, pulvinar lectus vel, mollis quam. Etiam ac sagittis tellus. Nulla pretium vehicula auctor. Fusce ultrices ultrices 
-        diam, eget gravida neque scelerisque at. Nulla quis nulla erat. Nunc eu dapibus risus, id aliquet nulla. In dictum nulla eget arcu feugiat ultrices. 
-        Cras tortor lorem, tempus at lectus sed, viverra tempus magna. Maecenas vulputate, ante at ornare tristique, nibh urna elementum mi, eget volutpat 
-        neque ipsum eget arcu. Fusce eu molestie purus.Vestibulum pellentesque sagittis metus, at laoreet lectus aliquam eget. Quisque nibh ante, luctus in libero quis,
-        ultricies aliquam nisi. Ut varius sollicitudin lorem, eget molestie mauris egestas et. Quisque rhoncus ac odio sed scelerisque. Duis finibus odio est, 
-        pulvinar aliquam metus euismod eget. Vestibulum urna metus, dignissim eu ex sit amet, condimentum egestas ex. In vel finibus ante, sit amet tincidunt 
-        augue. Sed nec. 
+        How do cells know where they are and where they’re going?
+	Cells are not just little biochemical machines—they’re wanderers, navigators, and team players in an ever-changing landscape. 
+	We build computational maps of cellular identity and movement, using spatial transcriptomics and temporal modeling to track 
+	how cells make decisions about their fate. Whether it’s a regenerating limb or a developing embryo, we aim to decode 
+	the blueprints that guide cell migration and organization.
         `
     },
     {
