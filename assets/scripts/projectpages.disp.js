@@ -10,7 +10,7 @@ const PROJINFO = [
 	We build computational maps of cellular identity and movement, using spatial transcriptomics and temporal modeling to track 
 	how cells make decisions about their fate. Whether it’s a regenerating limb or a developing embryo, we aim to decode 
 	the blueprints that guide cell migration and organization.
-        `.
+        `,
 	papers : [
             { title: "MarkerMap: nonlinear marker selection for single-cell studies (2024)", link: "https://doi.org/10.1038/s41540-024-00345-6" },
             { title: "Patches: A Representation Learning framework for Decoding Shared and Condition-Specific Transcriptional Programs in Wound Healing (2024)", link: "https://www.biorxiv.org/content/10.1101/2024.12.23.630186" },
