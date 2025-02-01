@@ -9,7 +9,7 @@ const PROJINFO = [
 	Cells are not just little biochemical machines—they’re wanderers, navigators, and team players in an ever-changing landscape. 
 	We build computational maps of cellular identity and movement, using spatial transcriptomics and temporal modeling to track 
 	how cells make decisions about their fate. Whether it’s a regenerating limb or a developing embryo, we aim to decode 
-	the blueprints that guide cell migration and organization.
+	the blueprints that guide cell migration and organization
         `,
 	papers : [
             { title: "MarkerMap: nonlinear marker selection for single-cell studies (2024)", link: "https://doi.org/10.1038/s41540-024-00345-6" },
@@ -82,10 +82,7 @@ function getQueryVariable(variable){
 function buildProjPage(projinfo){
     var projID = getQueryVariable("projID")
     var template = document.getElementById("proj-body")
-    if (!template) {
-    console.error("Error: Could not find the element with ID 'proj-body'");
-    return;
-}
+
 
     for (var i = 0; i < projinfo.length ; i++){
         if (projinfo[i].projID == projID){
@@ -104,7 +101,7 @@ function buildProjPage(projinfo){
             template.innerHTML = 
             `
             <h2>${projinfo[i].name}</h2>
-                <div class="col-6 col-6" style="text-align: justify;"><span class="image left"><img src=${projinfo[i].image} alt=""></span>
+                <div class="col-6 col-6" style="text-align: justify;"><span class="image left"><img src="${projinfo[i].image}" alt=""></span>
                     <p>${projinfo[i].longdesc}</p>
 		    ${papersHTML} 
                 </div>
