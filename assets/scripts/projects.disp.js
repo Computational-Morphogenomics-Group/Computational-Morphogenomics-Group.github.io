@@ -6,37 +6,37 @@ const PROJECTS = [
     {
         projID : "stgen",
         name : "Maps of the Morphing Cell: Spatial & Temporal Genomics", 
-        image : "assets/images/projects/placeholder.png", 
+        image : "assets/images/projects/cell.png", 
         shortdesc : "How do cells know where they are and where they’re going?"
     },
     {
         projID : "regen",
         name : "Statistics of self-organization: Development, Wound Healing & Regeneration", 
-        image : "assets/images/projects/placeholder.png", 
+        image : "assets/images/projects/cell.png", 
         shortdesc : "Why can some creatures regrow limbs while others can’t even fix a scratch properly?"
     },
     {
         projID : "physml",
         name : "The Physics of Proliferating Active Matter: Forces, Flows & Structure", 
-        image : "assets/images/projects/placeholder.png" , 
+        image : "assets/images/projects/cell.png" , 
         shortdesc : "What happens when cells push, pull, and squeeze their way through tissues?"
     },
     {
         projID : "intgen",
         name : "Interpretable Machine Learning: Making Sense of Messy Data", 
-        image : "assets/images/projects/placeholder.png", 
+        image : "assets/images/projects/cell.png", 
         shortdesc : "Can AI help us understand biology without turning into a black box?"
     },
     {
         projID : "expgen",
         name : "Designing for Discovery: Experimental Design and Causal Reasoning", 
-        image : "assets/images/projects/placeholder.png", 
+        image : "assets/images/projects/cell.png", 
         shortdesc : "How do we design experiments that uncover both patterns and mechanisms?"
     },
     {
         projID : "predbio",
         name : "Predictive Biology: Learning from Data to Anticipate Outcomes", 
-        image : "assets/images/projects/placeholder.png", 
+        image : "assets/images/projects/cell.png", 
         shortdesc : "Can we use data to predict how biology unfolds?"
     },
     
