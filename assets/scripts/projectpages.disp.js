@@ -35,7 +35,7 @@ const PROJINFO = [
         projID : "physml",
         name : "The Physics of Proliferating Active Matter: Forces, Flows & Structure", 
         link : "about:blank" ,
-        image : "assets/images/projects/physics.png" , 
+        image : "assets/images/projects/placeholder.png" , 
         longdesc : 
 	`What happens when cells push, pull, and squeeze their way through tissues?
 	Cells aren’t static—they move, exert forces, and react to their surroundings. Using mechanics, statistical physics, 
@@ -48,7 +48,7 @@ const PROJINFO = [
         projID : "intgen",
         name : "Interpretable Machine Learning: Making Sense of Messy Data", 
         link : "about:blank",
-        image : "assets/images/projects/dish.jpeg", 
+        image : "assets/images/projects/placeholder.png", 
         longdesc : 
 	`Can AI help us understand biology without turning into a black box?
 	Machine learning is powerful—but in biology, interpretability matters just as much as accuracy.
@@ -62,7 +62,7 @@ const PROJINFO = [
         projID : "expgen",
         name : "Designing for Discovery: Experimental Design and Causal Reasoning", 
         link : "about:blank",
-        image : "assets/images/projects/transcriptomics.jpeg", 
+        image : "assets/images/projects/placeholder.png", 
         longdesc : 
 	`How do we design experiments that uncover both patterns and mechanisms?
 	Biology is full of hidden dependencies, but not all experiments are designed to reveal them.
@@ -75,7 +75,7 @@ const PROJINFO = [
         projID : "predbio",
         name : "Predictive Biology: Learning from Data to Anticipate Outcomes", 
         link : "about:blank",
-        image : "assets/images/projects/placeholder.jpeg", 
+        image : "assets/images/projects/placeholder.png", 
         longdesc : 
 	`Cells respond to signals, adapt to environments, and sometimes behave unpredictably.
 	We develop predictive models that learn from large biological datasets to forecast cellular responses, disease progression, and experimental outcomes.
