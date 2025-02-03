@@ -115,11 +115,22 @@ function buildProjPage(projinfo){
             
             // Check if there are relevant papers
             if (projinfo[i].papers && projinfo[i].papers.length > 0) {
-                papersHTML += `<h3>Relevant Papers:</h3><ul>`;
+                papersHTML += `
+                <h3>Relevant Papers:</h3>
+                <ul>
+                `;
                 projinfo[i].papers.forEach(paper => {
-                    papersHTML += `<li style="margin-bottom: 5px;"><i class="fas fa-book-open"></i> <a href="${paper.link}" target="_blank">${paper.title}</a></li>`;
+                    papersHTML += `
+                    <li style="margin-bottom: 5px;list-style-position: inside;">
+                        <span style="position: relative;">
+                            <i class="fas fa-book-open"></i><a href="${paper.link}" target="_blank">&nbsp${paper.title}</a>
+                        </span>
+                    </li>
+                    `
                 });
-                papersHTML += `</ul>`;
+                papersHTML += `
+                </ul>
+                `;
             }
 
 	
@@ -127,8 +138,11 @@ function buildProjPage(projinfo){
             `
             <h2>${projinfo[i].name}</h2>
                 <div class="col-6 col-6" style="text-align: justify;"><span class="image left"><img src="${projinfo[i].image}" alt=""></span>
-                    <p>${projinfo[i].longdesc}</p>
-		    ${papersHTML} 
+                    <p>
+                        ${projinfo[i].longdesc}
+                        ${papersHTML} 
+                    </p>
+		    
                 </div>
             `
 
