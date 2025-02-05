@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Add new years here
-  const YEARS = ["2025", "2024", "2023", "2022", "2021"];
+  const YEARS = ["2025", "2024", "2023", "2021"];
 
   // Add new papers here. Each paper object includes:
   // name, link, authors, tags, source, icon, and year.
@@ -162,8 +162,8 @@ $(document).ready(function() {
       var block = `
         <div class="col-1 col-12" style="text-align: justify;">
           <a href="${data[i].link}" target="_blank">
-            <span class="image left" style="width: 10%">
-              <img src="${data[i].icon ? data[i].icon : 'assets/images/projects/placeholder.png'}" alt="paper icon"/>
+            <span class="image left">
+              <img src="${data[i].icon ? data[i].icon : 'assets/images/projects/placeholder.png'}" alt="paper icon" width="150", height="150"/>
             </span>
             <h4 style="text-align: left;">${data[i].name}</h4>
             ${data[i].authors}<br>
@@ -202,6 +202,3 @@ $(document).ready(function() {
     buildTables(data, YEARS);
   });
 });
-</script>
-</body>
-</html>
