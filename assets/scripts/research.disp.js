@@ -1,4 +1,9 @@
- // Add new years here
+<!-- Make sure this container exists in your HTML body -->
+<div id="papers-block"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Add new years here
   const YEARS = ["2025", "2024", "2023", "2022", "2021"];
 
   // Add new papers here. Each paper object includes:
@@ -132,36 +137,10 @@
     }
   ];
 
-  // Build sections based on years
-  buildSections(YEARS);
-  // Build the tables with the papers
-  buildTables(PAPERS, YEARS);
-
-  // No need to update below this line if everything is working!
-
-  // Keyup event for search
-  document.getElementById("search-papers").addEventListener("keyup", function() {
-    const val = this.value;
-    const data = searchTables(PAPERS, val);
-    buildTables(data, YEARS);
-  });
-
-  // Function to search tables by paper name
-  function searchTables(data, value) {
-    const filteredData = [];
-    value = value.toLowerCase();
-    for (let i = 0; i < data.length; i++) {
-      const name = data[i].name.toLowerCase();
-      if (name.includes(value)) {
-        filteredData.push(data[i]);
-      }
-    }
-    return filteredData;
-  }
-
-  // Function to build the sections (years)
+  // Function to build the sections (by year)
   function buildSections(years) {
     const sections = document.getElementById("papers-block");
+    // Clear any previous content and add the search box
     sections.innerHTML = `<input id="search-papers" type="text" name="search-papers" placeholder="Search">`;
     for (let i = 0; i < years.length; i++) {
       sections.innerHTML += `
@@ -177,11 +156,14 @@
     // Reset content for each year
     for (let i = 0; i < years.length; i++) {
       const subsection = document.getElementById("grid-" + years[i]);
-      subsection.innerHTML = "";
+      if (subsection) {
+        subsection.innerHTML = "";
+      }
     }
     // Update content with papers
     for (let i = 0; i < data.length; i++) {
       const table = document.getElementById("grid-" + data[i].year);
+      if (!table) continue; // Skip if the section for this year doesn't exist
       let block = `
         <div class="col-1 col-12" style="text-align: justify;">
           <a href="${data[i].link}" target="_blank">
@@ -201,3 +183,29 @@
       table.innerHTML += block;
     }
   }
+
+  // Function to search papers by name
+  function searchTables(data, value) {
+    const filteredData = [];
+    value = value.toLowerCase();
+    for (let i = 0; i < data.length; i++) {
+      const name = data[i].name.toLowerCase();
+      if (name.includes(value)) {
+        filteredData.push(data[i]);
+      }
+    }
+    return filteredData;
+  }
+
+  // Initial building of sections and tables
+  buildSections(YEARS);
+  buildTables(PAPERS, YEARS);
+
+  // Add keyup event listener for search functionality
+  document.getElementById("search-papers").addEventListener("keyup", function() {
+    const val = this.value;
+    const data = searchTables(PAPERS, val);
+    buildTables(data, YEARS);
+  });
+});
+</script>
