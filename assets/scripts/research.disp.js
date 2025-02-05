@@ -1,8 +1,6 @@
 <!-- Make sure this container exists in your HTML body -->
 <div id="papers-block"></div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
   // Add new years here
   const YEARS = ["2025", "2024", "2023", "2022", "2021"];
 
@@ -137,75 +135,75 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   ];
 
-  // Function to build the sections (by year)
-  function buildSections(years) {
-    const sections = document.getElementById("papers-block");
-    // Clear any previous content and add the search box
-    sections.innerHTML = `<input id="search-papers" type="text" name="search-papers" placeholder="Search">`;
-    for (let i = 0; i < years.length; i++) {
-      sections.innerHTML += `
-        <br>
-        <h3>${years[i]}</h3>
-        <div id="grid-${years[i]}" class="row gtr-100 gtr-uniform"></div>
-      `;
-    }
-  }
+  
+buildSections(YEARS);
+buildTables(PAPERS, YEARS);
 
-  // Function to build the content within sections
-  function buildTables(data, years) {
-    // Reset content for each year
-    for (let i = 0; i < years.length; i++) {
-      const subsection = document.getElementById("grid-" + years[i]);
-      if (subsection) {
-        subsection.innerHTML = "";
-      }
-    }
-    // Update content with papers
-    for (let i = 0; i < data.length; i++) {
-      const table = document.getElementById("grid-" + data[i].year);
-      if (!table) continue; // Skip if the section for this year doesn't exist
-      let block = `
-        <div class="col-1 col-12" style="text-align: justify;">
-          <a href="${data[i].link}" target="_blank">
-            <span class="image left" style="width: 10%">
-              <img src="${data[i].icon ? data[i].icon : 'assets/images/projects/placeholder.png'}" alt="paper icon"/>
-            </span>
-            <h4 style="text-align: left;">${data[i].name}</h4>
-            ${data[i].authors}
-            <br>
-            ${data[i].source}
-          </a>
-          <br>`;
-      for (let j = 0; j < data[i].tags.length; j++) {
-        block += `<span style="padding:2px 6px; background: #e44c65; border-radius: 5px; pointer-events: none; margin-right: 2px;">${data[i].tags[j]}</span>`;
-      }
-      block += `</div>`;
-      table.innerHTML += block;
-    }
-  }
+// No need to update below this line if everything is working !
+//############################################################//
 
-  // Function to search papers by name
-  function searchTables(data, value) {
-    const filteredData = [];
+// Keyup event for search
+$(`#search-papers`).on('keyup', function(){
+    var val = $(this).val();
+    var data = searchTables(PAPERS, val);
+    buildTables(data, YEARS);
+});
+
+// Function to search tables
+function searchTables(data, value){
+    var filteredData = [];
     value = value.toLowerCase();
-    for (let i = 0; i < data.length; i++) {
-      const name = data[i].name.toLowerCase();
-      if (name.includes(value)) {
-        filteredData.push(data[i]);
-      }
+    for (var i = 0; i < data.length; i++){
+        var name = data[i].name.toLowerCase();
+        if (name.includes(value)){
+            filteredData.push(data[i]);
+        }
     }
     return filteredData;
-  }
+}
 
-  // Initial building of sections and tables
-  buildSections(YEARS);
-  buildTables(PAPERS, YEARS);
+// Function to build the sections (years)
+function buildSections(years){
+    var sections = document.getElementById("papers-block");
+    sections.innerHTML = `<input id="search-papers" type="text" name="search-papers" placeholder="Search">`;
+    for (var i = 0; i < years.length; i++){
+        sections.innerHTML += `\n<br>
+            <h3>${years[i]}</h3>
+            <div id="grid-${years[i]}" class="row gtr-100 gtr-uniform"></div>
+        `;
+    }
+}
 
-  // Add keyup event listener for search functionality
-  document.getElementById("search-papers").addEventListener("keyup", function() {
-    const val = this.value;
-    const data = searchTables(PAPERS, val);
-    buildTables(data, YEARS);
-  });
-});
-</script>
+// Function to build the content within sections
+function buildTables(data, years){
+    // Reset content for each year
+    for (var i = 0; i < years.length; i++){
+        var subsection = document.getElementById("grid-" + years[i]);
+        if (subsection) {
+            subsection.innerHTML = "";
+        }
+    }
+    // Update content with papers
+    for (var i = 0; i < data.length; i++){
+        var table = document.getElementById("grid-" + data[i].year);
+        if (!table) continue;  // Skip if the section for this year doesn't exist
+        var block = 
+            `<div class="col-1 col-12" style="text-align: justify;">
+                <a href="${data[i].link}" target="_blank">
+                    <span class="image left" style="width: 10%">
+                        <img src="${data[i].icon ? data[i].icon : 'assets/images/projects/placeholder.png'}" alt="paper icon"/>
+                    </span>
+                    <h4 style="text-align: left;">${data[i].name}</h4>
+                    ${data[i].authors}
+                    <br>
+                    ${data[i].source}
+                </a>
+                <br>`;
+        for (var j = 0; j < data[i].tags.length; j++){
+            block += `\n<span style="padding:2px 6px; background: #e44c65; border-radius: 5px; pointer-events: none; margin-right: 2px;">${data[i].tags[j]}</span>`;
+        }
+        block += `\n</div>`;
+        table.innerHTML += block;
+    }
+}
+
