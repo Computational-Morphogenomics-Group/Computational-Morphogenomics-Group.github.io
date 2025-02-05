@@ -11,7 +11,7 @@ $(document).ready(function() {
       authors: `Dinithi Sumanaweera, Chenqu Suo, Ana-Maria Cujba, Daniele Muraro, Emma Dann, Krzysztof Polanski, Alexander S Steemers, Woochan Lee, Amanda J Oliver, Jong-Eun Park, Kerstin B Meyer, Bianca Dumitrascu, Sarah A Teichmann`,
       tags: ["single-cell", "trajectory alignment"],
       source: "Nature Methods 22 (1), 68-81",
-      icon: "assets/images/icons/singlecell.png",
+      //icon: "assets/images/icons/singlecell.png",
       year: "2025"
     },
     {
@@ -20,7 +20,7 @@ $(document).ready(function() {
       authors: `Maria Blumenkrantz, Felicia Woron, Ernesto Gagarin, Everett Weinstein, Maryam H Kamel, Leonardo Campos, Agnieszka Geras, Troy Anderson, Julia Mo, Desmarie Sherwood, Maya Gwin, Bianca Dumitrascu, Nadeen O Chahine, Joanna Smeeton`,
       tags: ["cell fate", "plasticity", "regeneration", "single-cell", "archetype analysis"],
       source: "bioRxiv",
-      icon: "assets/images/icons/regeneration.png",
+      //icon: "assets/images/icons/regeneration.png",
       year: "2024"
     },
     {
@@ -29,7 +29,7 @@ $(document).ready(function() {
       authors: "W. Gregory, N. Sarwar, G. Kevrekidis, S. Villar, and B. Dumitrascu",
       tags: ["single-cell", "marker selection", "deep learning", "interpretable ml"],
       source: "npj Systems Biology and Applications 10 (1), 17",
-      icon: "assets/images/icons/markermap.png",
+      //icon: "assets/images/icons/markermap.png",
       year: "2024"
     },
     {
@@ -38,7 +38,7 @@ $(document).ready(function() {
       authors: "O. Beker, D. Amador, J.P. Nima, S.V. Deursen, Y. Woappi, and B. Dumitrascu",
       tags: ["representation learning", "wound healing", "single-cell", "deep learning", "interpretable ml"],
       source: "bioRxiv, 2024.12.23.630186",
-      icon: "assets/images/icons/patches.png",
+      //icon: "assets/images/icons/patches.png",
       year: "2024"
     },
     {
@@ -47,7 +47,7 @@ $(document).ready(function() {
       authors: "S. Chang, Z. Chen, B. Dumitrascu, and D.A. Knowles",
       tags: ["cellular dynamics", "latent variable models", "mechanistic modeling"],
       source: "ICML'24 Workshop ML for Life and Material Science: From Theory to Industry",
-      icon: "assets/images/icons/cellflows.png",
+      //icon: "assets/images/icons/cellflows.png",
       year: "2024"
     },
     {
@@ -56,7 +56,7 @@ $(document).ready(function() {
       authors: "A. Hallou*, R. He*, B.D. Simons, and B. Dumitrascu",
       tags: ["spatial transcriptomics", "mechano-transcriptomics", "biophysics", "development"],
       source: "Accepted at Nature Methods",
-      icon: "assets/images/icons/mechano.png",
+      //icon: "assets/images/icons/mechano.png",
       year: "2023"
     },
     {
@@ -65,7 +65,7 @@ $(document).ready(function() {
       authors: "R. Viñas, C.K. Joshi, D. Georgiev, P. Lin, B. Dumitrascu, E.R. Gamazon, and P. Liò",
       tags: ["hypergraph", "multi-tissue", "gene expression", "deep learning"],
       source: "Nature Machine Intelligence 5 (7), 739-753",
-      icon: "assets/images/icons/hypergraph.png",
+      //icon: "assets/images/icons/hypergraph.png",
       year: "2023"
     },
     {
@@ -74,7 +74,7 @@ $(document).ready(function() {
       authors: "M.M. Zhang, B. Dumitrascu, S.A. Williamson, and B.E. Engelhardt",
       tags: ["Gaussian processes", "nonstationary functions", "online learning", "machine learning"],
       source: "IEEE Transactions on Signal Processing 71, 1539-1550",
-      icon: "assets/images/icons/gaussian.png",
+      //icon: "assets/images/icons/gaussian.png",
       year: "2023"
     },
     {
@@ -83,7 +83,7 @@ $(document).ready(function() {
       authors: "E.A.G. Baker, D. Schapiro, B. Dumitrascu, S. Vickovic, and A. Regev",
       tags: ["in silico tissue generation", "spatial omics"],
       source: "Nature Methods 20 (3), 424-431",
-      icon: "assets/images/icons/tissue.png",
+      //icon: "assets/images/icons/tissue.png",
       year: "2023"
     },
     {
@@ -92,7 +92,7 @@ $(document).ready(function() {
       authors: "D. Georgiev, R. Viñas, S. Considine, B. Dumitrascu, and P. Liò",
       tags: ["trajectory inference", "neural algorithms", "algorithmic reasoning", "machine learning"],
       source: "The 2023 ICML Workshop on Computational Biology",
-      icon: "assets/images/icons/narti.png",
+      //icon: "assets/images/icons/narti.png",
       year: "2023"
     },
     {
@@ -101,7 +101,7 @@ $(document).ready(function() {
       authors: "S. Villar, W. Yao, D.W. Hogg, B. Blum-Smith, and B. Dumitrascu",
       tags: ["mechanistic modeling", "interpretable ml"],
       source: "Journal of Machine Learning Research 24 (109), 1-32",
-      icon: "assets/images/icons/dimensionless.png",
+      //icon: "assets/images/icons/dimensionless.png",
       year: "2023"
     },
     {
@@ -110,7 +110,7 @@ $(document).ready(function() {
       authors: "Adrien Hallou, Hannah G. Yevick, Bianca Dumitrascu, Virginie Uhlmann",
       tags: ["imaging", "deep learning", "bioimage analysis", "developmental biology"],
       source: "Development",
-      icon: "assets/images/icons/bioimage.png",
+      //icon: "assets/images/icons/bioimage.png",
       year: "2021"
     },
     {
@@ -119,7 +119,7 @@ $(document).ready(function() {
       authors: "Bianca Dumitrascu, Soledad Villar, Dustin G. Mixon, Barbara E. Engelhardt",
       tags: ["interpretability", "scRNA-seq", "marker gene selection"],
       source: "Nature Communications",
-      icon: "assets/images/icons/marker.png",
+      //icon: "assets/images/icons/marker.png",
       year: "2021"
     },
     {
@@ -128,7 +128,7 @@ $(document).ready(function() {
       authors: "Jacob D. Moss, Felix L. Opolka, Bianca Dumitrascu, Pietro Lió",
       tags: ["latent force models", "gene regulatory networks", "dynamical systems"],
       source: "arXiv",
-      icon: "assets/images/icons/latent.png",
+      //icon: "assets/images/icons/latent.png",
       year: "2021"
     }
   ];
