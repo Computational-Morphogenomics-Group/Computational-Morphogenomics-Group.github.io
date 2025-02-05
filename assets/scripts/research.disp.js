@@ -105,60 +105,8 @@
     year: "2023"
   },
 
-				{
-					name : "Sequential Gaussian Processes for Online Learning of Nonstationary Functions", 
-					link : "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10103648",
-					authors : "Michael M. Zhang , Bianca Dumitrascu, Sinead A. Williamson, and Barbara E. Engelhardt", 
-					tags : ["In Progress..." , "In Progress..."], 
-					source : "IEEE Transactions on Signal Processing", 
-					date : "17 Apr 2023", 
-					year : "2023"
-				},
-				{
-					name : "A Computational Pipeline for Spatial Mechano-Transcriptomics", 
-					link : "https://www.biorxiv.org/content/10.1101/2023.08.03.551894v1.full.pdf", 
-					authors : "Adrien Hallou, Ruiyang He, Benjamin D. Simons, Bianca Dumitrascu",
-					tags : ["In Progress..." , "In Progress..."], 
-					source : "bioRxiv", 
-					date : "05 Aug 2023", 
-					year : "2023"
-				},
-				{
-					name : "Hypergraph Factorisation for Multi-Tissue Gene Expression Imputation", 
-					link : "https://doi.org/gq4m9w",
-					 authors : "Ramon Viñas, Chaitanya K. Joshi, Dobrik Georgiev, Bianca Dumitrascu, Eric R. Gamazon, Pietro Liò", 
-					 tags : ["Multi-Tissue Imputation" , "Deep Learning"], 
-					 source : "bioRxiv", 
-					 date : "08 Aug 2022", 
-					 year : "2022"
-				},
-				{
-					name : "MarkerMap: Nonlinear Marker Selection for Single-Cell Studies", 
-					link : "http://arxiv.org/abs/2207.14106", 
-					authors : "Nabeel Sarwar, Wilson Gregory, George A. Kevrekidis, Soledad Villar, Bianca Dumitrascu", 
-					tags : ["Interpretability" , "Deep Learning", "scRNA-Seq"], 
-					source : "arXiv", 
-					date : "28 Jul 2022", 
-					year : "2022"
-				},
-				{
-					name : "Dimensionless Machine Learning: Imposing Exact Units Equivariance", 
-					link : "https://doi.org/gptvs8", 
-					authors : "Soledad Villar, Weichi Yao, David W. Hogg, Ben Blum-Smith, Bianca Dumitrascu", 
-					tags : ["Data Augmentation" , "Invariance", "Ecology", "Symbolic Regression"], 
-					source : "arXiv", 
-					date : "02 Apr 2022", 
-					year : "2022"
-				},
-				{
-					name : "Power Analysis for Spatial Omics", 
-					link : "https://doi.org/gpgd6z", 
-					authors : "Ethan A. G. Baker, Denis Schapiro, Bianca Dumitrascu, Sanja Vicković, Aviv Regev", 
-					tags : ["Spatial Transcriptomics"], 
-					source : "bioRxiv", 
-					date : "31 Jan 2022", 
-					year : "2022"
-				},
+				
+				
 				{
 					name : "Deep Learning for Bioimage Analysis in Developmental Biology", 
 					link : "https://doi.org/gptvs7", 
