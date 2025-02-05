@@ -1,75 +1,75 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>CMG - Research</title>
-		<link rel="icon" type="image/x-icon" href="assets/images/projects/butterfly.png">
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-		<link rel="stylesheet" href="assets/styles/main.css"/>
-		<noscript><link rel="stylesheet" href="assets/styles/noscript.css"/></noscript>
-	</head>
-	<body class="preload">
-		<div id="wrapper">
+    <head>
+        <title>CMG - Research</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/projects/butterfly.png">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <link rel="stylesheet" href="assets/styles/main.css"/>
+        <noscript><link rel="stylesheet" href="assets/styles/noscript.css"/></noscript>
+    </head>
+    <body class="preload">
+        <div id="wrapper">
             <div class="header"></div>
             <header id="header">
-				<h1 id="logo"><a href="index.html">Computational Morphogenomics Group</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html#about">About</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="research.html">Research</a></li>
-						<li><a href="members.html">Members</a></li>
-						<li class="active"><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div id="main" class="wrapper style1">
-				<div class="container">
-					<header class="major">
-						<h2>Contact</h2>
-						<p>
-							Our group is part of the Department of 
-							Statistics at Columbia University.
-						</p>
-					</header>
-					<article id="contact">
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name"/>
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email"/>
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="primary"/></li>
-								<li><input type="reset" value="Reset"/></li>
-							</ul>
-						</form>
-						<!-- <ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul> -->
-					</article>
-				</div>
-			</div>
-		</div>
-		<script src="assets/scripts/jquery.min.js"></script>
-		<script src="assets/scripts/jquery.scrolly.min.js"></script>
-		<script src="assets/scripts/jquery.dropotron.min.js"></script>
-		<script src="assets/scripts/jquery.scrollex.min.js"></script>
-		<script src="assets/scripts/browser.min.js"></script>
-		<script src="assets/scripts/breakpoints.min.js"></script>
-		<script src="assets/scripts/util.js"></script>
-		<script src="assets/scripts/main.js"></script>
-	</body>
+                <h1 id="logo"><a href="index.html">Computational Morphogenomics Group</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <header class="major">
+                        <h2>Contact</h2>
+                        <p>
+                            Our group is part of the Department of Statistics at Columbia University.
+                        </p>
+                    </header>
+                    <article id="contact">
+                        <!-- Extra lab information instead of a contact form -->
+                        <div class="lab-info">
+                            {% include link.html type="email" icon="" text="bianca.dumitrascu@columbia.edu" tooltip="" link="bianca.dumitrascu@columbia.edu" style="button" %} 
+                            {% include link.html type="address" icon="" text="Departmental Address" tooltip="Our location for easy navigation" link="https://www.google.com/maps?rlz=1C5CHFA_enGB980GB980&output=search&q=DEPARTMENT+OF+STATISTICS+Columbia+University+Room+1005+SSW,+MC+4690+1255+Amsterdam+Avenue+New+York,+NY+10027&sa=X&ved=2ahUKEwiQtKuPnJn9AhVMEFkFHa30AcEQ0pQJegQIEBAB" style="button" %} 
+                            {% include link.html type="github" icon="" text="GitHub" tooltip="Visit our GitHub repository" link="https://github.com/Computational-Morphogenomics-Group" style="button" %} 
+                            {:.center}
+
+                            {% include section.html %}
+
+                            <h3>Mailing Address</h3>
+                            <p>
+                                DEPARTMENT OF STATISTICS<br>
+                                Columbia University<br>
+                                1255 Amsterdam Avenue<br>
+                                Room 1005 SSW, MC 4690<br>
+                                New York, NY 10027
+                            </p>
+                            {:.center}
+
+                            {% capture col1 %}
+                                {% include figure.html image="images/photo_department.jpg" caption="Columbia Campus" %}
+                            {% endcapture %}
+                            {% capture col2 %}
+                                {% include figure.html image="images/photo-NYC.jpg" caption="Around NYC" %}
+                            {% endcapture %}
+                            {% include two-col.html col1=col1 col2=col2 %}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <script src="assets/scripts/jquery.min.js"></script>
+        <script src="assets/scripts/jquery.scrolly.min.js"></script>
+        <script src="assets/scripts/jquery.dropotron.min.js"></script>
+        <script src="assets/scripts/jquery.scrollex.min.js"></script>
+        <script src="assets/scripts/browser.min.js"></script>
+        <script src="assets/scripts/breakpoints.min.js"></script>
+        <script src="assets/scripts/util.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
 </html>
