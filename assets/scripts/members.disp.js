@@ -42,11 +42,6 @@ const ACTIVE = [
         image : "assets/images/members/ting-chen.jpg", 
     }, 
     {
-        name : "Craig Fouts", 
-        title : "Masters Student",
-        image : "assets/images/members/craig-fouts.png", 
-    },
-    {
         name : "Özgür Yılmaz Beker", 
         title : "Research Assistant",
         image : "assets/images/members/ozgur-yilmaz-beker.png", 
@@ -60,6 +55,13 @@ const ACTIVE = [
 
 // Alumni go here
 const ALUMNI = [
+	
+    {
+        name : "Craig Fouts", 
+        title : "Machine Learning Engineer @Vickovic Lab",
+        image : "assets/images/members/craig-fouts.png", 
+    },
+	
 	{
         name : "Jose Pomarino Nima", 
         title : "Masters Student",
