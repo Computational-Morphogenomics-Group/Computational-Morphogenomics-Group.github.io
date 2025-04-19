@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>From Local Decisions to Global Patterns | CMG</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/projects/butterfly.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <noscript><link rel="stylesheet" href="assets/styles/noscript.css" /></noscript>
+  <style>
+    .features article {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .features article img {
+      max-width: 450px;
+      width: 75%;
+      margin: 1.5rem auto;
+      display: block;
+    }
+    .features article h4 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .features article .authors {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .features article p {
+      text-align: justify;
+      margin: 1rem auto;
+      max-width: 800px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    header.major {
+      margin-top: 10rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .actions-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+    .actions li {
+      list-style: none;
+    }
+  </style>
+</head>
+<body class="preload">
+  <div id="wrapper">
+    <header id="header">
+      <h1 id="logo"><a href="index.html">Computational Morphogenomics Group</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main style1">
+      <div class="inner">
+        <header class="major">
+          <h2>Cells in Context, across Spatial and Temporal Scales</h2>
+          <p>How do individual cells maintain and interpret their identity in context? This theme centers the spatial and temporal cues that inform cell fate: trajectory inference, spatial omics, and developmental mapping, including how these principles vary across species. </p>
+        </header>
+
+        <section class="features">
+
+                   <article>
+            <h4>A computational pipeline for spatial mechano-transcriptomics</h4>
+            <div class="authors"> Adrien Hallou^, <strong>Ruiyang He^</strong>, Benjamin D. Simons, <strong> <u>Bianca Dumitrascu</u></strong>
+
+            <img src="assets/images/projects/tension.png" alt="Patches Visualization" />
+            </div>
+
+            <p> <strong> Summary </strong>:  This work combines gene expression and mechanical modeling to understand how forces shape tissue development and cell behavior in space, using a new computational method applied to mouse embryo data. </p>
+            <p> <strong> Abstract </strong>: Advances in spatial profiling technologies are providing insights into how molecular programs are influenced by local signaling and environmental cues. However, cell fate specification and tissue patterning involve the interplay of biochemical and mechanical feedback. Here we develop a computational framework that enables the joint statistical analysis of transcriptional and mechanical signals in the context of spatial transcriptomics. To illustrate the application and utility of the approach, we use spatial transcriptomics data from the developing mouse embryo to infer the forces acting on individual cells, and use these results to identify mechanical, morphometric and gene expression signatures that are predictive of tissue compartment boundaries. In addition, we use geoadditive structural equation modeling to identify gene modules that predict the mechanical behavior of cells in an unbiased manner. This computational framework is easily generalized to other spatial profiling contexts, providing a generic scheme for exploring the interplay of biomolecular and mechanical cues in tissues.</p>
+
+            <div style="max-width: 800px; margin: 0 auto; padding-left: 4rem; padding-right: 4rem;">
+
+            <ul class="actions">
+              <li><a href="https://www.nature.com/articles/s41592-025-02618-1" class="button primary" target="_blank">Paper</a></li>
+              <li><a href="https://www.nature.com/articles/s41592-024-02491-4" class="button primary" target="_blank">News coverage</a></li>
+              <li><a href="https://github.com/Computational-Morphogenomics-Group/TensionMap" class="button" target="_blank">GitHub</a></li>
+
+            </ul>
+            </div>
+              </article>
+
+
+
+          <article>
+            <h4>Gene-level alignment of single-cell trajectories</h4>
+            <div class="authors"> Dinithi Sumanaweera, Chenqu Suo, Ana-Maria Cujba, Daniele Muraro, Emma Dann, Krzysztof Polanski, Alexander S Steemers, Woochan Lee, Amanda J Oliver, Jong-Eun Park, Kerstin B Meyer, <strong>Bianca Dumitrascu</strong>, Sarah A Teichmann
+
+            <img src="assets/images/projects/Gene2Gene.png" alt="Patches Visualization" />
+            </div>
+
+            <p> <strong> Summary </strong>:  Genes2Genes helps compare how cells change over time by aligning their activity patterns—even when the match isn’t perfect—so we can better understand how diseases or lab-grown cells relate to real biological processes. </p>
+            <p> <strong> Abstract </strong>: Single-cell data analysis can infer dynamic changes in cell populations, for example across time, space or in response to perturbation, thus deriving pseudotime trajectories. Current approaches comparing trajectories often use dynamic programming but are limited by assumptions such as the existence of a definitive match. Here we describe Genes2Genes, a Bayesian information-theoretic dynamic programming framework for aligning single-cell trajectories. It is able to capture sequential matches and mismatches of individual genes between a reference and query trajectory, highlighting distinct clusters of alignment patterns. Across both real world and simulated datasets, it accurately inferred alignments and demonstrated its utility in disease cell-state trajectory analysis. In a proof-of-concept application, Genes2Genes revealed that T cells differentiated in vitro match an immature in vivo state while lacking expression of genes associated with TNF signaling. This demonstrates that precise trajectory alignment can pinpoint divergence from the in vivo system, thus guiding the optimization of in vitro culture conditions.</p>
+
+            <div style="max-width: 800px; margin: 0 auto; padding-left: 4rem; padding-right: 4rem;">
+
+            <ul class="actions">
+              <li><a href="https://www.nature.com/articles/s41592-024-02378-4" class="button primary" target="_blank">Paper</a></li>
+              <li><a href="https://github.com/Teichlab/Genes2Genes?tab=readme-ov-file" class="button" target="_blank">GitHub</a></li>
+
+            </ul>
+            </div>
+              </article>
+   
+
+
+          <article>
+            <h4>CellFlows: Inferring Splicing Kinetics from Latent and Mechanistic Cellular Dynamics </h4>
+            <div class="authors"> Sei Chang, Zaiqian Chen, <strong> Bianca Dumitrascu </strong>  , David A Knowles
+            </div>
+            <img src="assets/images/projects/kinetics.png" alt="Cis-Regulatory Elements" />
+            <p> <strong> Summary </strong>: CellFlows is a new method that uses neural networks and gene expression data to trace how individual cells change over time, helping scientists understand the pace and direction of cell development with greater accuracy and clarity.</p>
+           <p> <strong> Abstract </strong> RNA velocity-based methods estimate cellular dynamics and cell developmental trajectories based on spliced and unspliced RNA counts. Although numerous methods have been proposed, RNA velocity-based models vary greatly in their biophysical assumptions, architectures, and use cases. In this work, we introduce a new architecture, CellFlows, which incorporates self-supervised neural dimensionality reduction with the flexibility of neural-based latent time estimation into a mechanistic model, improving model interpretability and accuracy. CellFlows models splicing dynamics to infer gene and context-specific kinetic rates at single-cell resolution and correctly identifies both linear and branching cellular differentiation pathways originating from mouse embryonic stem cells. </p>
+
+            <ul class="actions">
+              <li><a href="https://openreview.net/pdf?id=ZwSIN40zKM" class="button primary" target="_blank">Paper</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <h4>Hypergraph Factorization for Multi-Tissue Gene Expression Imputation</h4>
+            <div class="authors">Ramon Viñas, Chaitanya K Joshi, Dobrik Georgiev, Phillip Lin, <strong> <u>Bianca Dumitrascu </u> </strong>, <u>Eric R Gamazon</u>, <u>Pietro Liò </u></div>
+            <img src="assets/images/projects/jaw.png" alt="Joint Regeneration" />
+            <p> <strong> Summary: </strong>: HYFA is a machine learning method that predicts missing gene activity across tissues, helping scientists study how genes work together in different parts of the body—even when some data is missing or unavailable. </p>
+            <p> <strong> Abstract: </strong> Integrating gene expression across tissues and cell types is crucial for understanding the coordinated biological mechanisms that drive disease and characterize homoeostasis. However, traditional multi-tissue integration methods either cannot handle uncollected tissues or rely on genotype information, which is often unavailable and subject to privacy concerns. Here we present HYFA (hypergraph factorization), a parameter-efficient graph representation learning approach for joint imputation of multi-tissue and cell-type gene expression. HYFA is genotype agnostic, supports a variable number of collected tissues per individual, and imposes strong inductive biases to leverage the shared regulatory architecture of tissues and genes. In performance comparison on Genotype–Tissue Expression project data, HYFA achieves superior performance over existing methods, especially when multiple reference tissues are available. The HYFA-imputed dataset can be used to identify replicable regulatory genetic variations (expression quantitative trait loci), with substantial gains over the original incomplete dataset. HYFA can accelerate the effective and scalable integration of tissue and cell-type transcriptome biorepositories.
+
+
+            <ul class="actions">
+              <li><a href="https://www.nature.com/articles/s42256-023-00684-8" class="button primary" target="_blank">Paper</a></li>
+            </ul>
+          </article>
+
+
+          <article>
+            <h4>In silico tissue generation and power analysis for spatial omics</h4>
+            <div class="authors"> Ethan A. G. Baker, Denis Schapiro, <strong> Bianca Dumitrascu </strong>, Sanja Vickovic & Aviv Regev </div>
+            <img src="assets/images/projects/hyfa.png" alt="hyfa" />
+            <p> <strong> Summary: </strong> Hypothesis testing in spatial omics requires null models—but generating these models is tricky when spatial correlations are present. This work proposes a simulation-based framework to evaluate the power of spatial experiments without violating spatial structure.  </p>
+            <p> <strong> Abstract: </strong> As spatially resolved multiplex profiling of RNA and proteins becomes more prominent, it is increasingly important to understand the statistical power available to test specific hypotheses when designing and interpreting such experiments. Ideally, it would be possible to create an oracle that predicts sampling requirements for generalized spatial experiments. However, the unknown number of relevant spatial features and the complexity of spatial data analysis make this challenging. Here, we enumerate multiple parameters of interest that should be considered in the design of a properly powered spatial omics study. We introduce a method for tunable in silico tissue (IST) generation and use it with spatial profiling data sets to construct an exploratory computational framework for spatial power analysis. Finally, we demonstrate that our framework can be applied across diverse spatial data modalities and tissues of interest. While we demonstrate ISTs in the context of spatial power analysis, these simulated tissues have other potential use cases, including spatial method benchmarking and optimization.
+
+</p>
+
+            <ul class="actions">
+              <li><a href="https://www.nature.com/articles/s41592-023-01766-6" class="button primary" target="_blank">Paper</a></li>
+            </ul>
+          </article>
+
+
+        </section>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <p>&copy; Bianca Dumitrascu Lab 2025 · Creative Commons Attribution 4.0 International License</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/jquery.scrolly.min.js"></script>
+  <script src="assets/scripts/jquery.dropotron.min.js"></script>
+  <script src="assets/scripts/jquery.scrollex.min.js"></script>
+  <script src="assets/scripts/browser.min.js"></script>
+  <script src="assets/scripts/breakpoints.min.js"></script>
+  <script src="assets/scripts/util.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>
