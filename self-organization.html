@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>From Local Decisions to Global Patterns | CMG</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/projects/butterfly.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <noscript><link rel="stylesheet" href="assets/styles/noscript.css" /></noscript>
+  <style>
+    .features article {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .features article img {
+      max-width: 450px;
+      width: 75%;
+      margin: 1.5rem auto;
+      display: block;
+    }
+    .features article h4 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .features article .authors {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .features article p {
+      text-align: justify;
+      margin: 1rem auto;
+      max-width: 800px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    header.major {
+      margin-top: 10rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .actions-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+    .actions li {
+      list-style: none;
+    }
+  </style>
+</head>
+<body class="preload">
+  <div id="wrapper">
+    <header id="header">
+      <h1 id="logo"><a href="index.html">Computational Morphogenomics Group</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main style1">
+      <div class="inner">
+        <header class="major">
+          <h2>Statistics of Self-Organization: Development, Wound Healing & Regeneration</h2>
+          <p>How do local cellular decisions shape tissue architecture and enable recovery after injury? Our research seeks to uncover the rules of morphogenesis, regeneration, and tissue formation by integrating multi-modal data—including morphology, mechanics, and gene expression—to model emergent behavior across biological scales. </p>
+        </header>
+
+        <section class="features">
+
+          <article>
+            <h4>Patches: A Representation Learning framework for Decoding Shared and Condition-Specific Transcriptional Programs in Wound Healing</h4>
+            <div class="authors"> <strong> Oz Beker </strong>, Dreyton Amador, Jose Francisco Pomarino Nima, Simon Van Deursen, <u> Yvon Woappi </u>, <strong> <u>B.Dumitrascu </u></strong>  
+            <img src="assets/images/projects/patches.png" alt="Patches Visualization" />
+            </div>
+
+            <p> <strong> Summary </strong>: Patches is a representation learning framework designed to disentangle shared and condition-specific transcriptional programs during wound healing. We are actively expanding both <strong>Patches</strong> and its parent system, <a href="https://ladder.readthedocs.io/en/latest/"><strong>Ladder</strong></a>, to support cross-species and cross-modality analysis—leveraging comparative data to gain insight into human development and disease mechanisms. </p>
+            <p> <strong> Abstract </strong>: Single-cell genomics enables the study of cell states and cell state transitions across biological conditions like aging, drug treatment, or injury. However, existing computational methods often struggle to simultaneously disentangle shared
+            and condition-specific transcriptional patterns, particularly in experimental designs with missing data, unmatched cell
+            populations, or complex attribute combinations. To address these challenges, Patches identifies universal transcriptomic features alongside condition-dependent variations in scRNA-seq data. Using conditional subspace learning, Patches enables robust integration, cross-condition prediction, and biologically interpretable representations of gene expression. Unlike prior methods, Patches excels in experimental designs with multiple attributes, such as age, treatment, and temporal dynamics, distinguishing general cellular mechanisms from condition-dependent changes. We applied Patches to both simulated data and real transcriptomic datasets from skin injury models, focusing on the effects of aging and drug treatment. Patches revealed shared wound healing patterns and condition-specific changes in cell behavior and extracellular matrix remodeling. These insights deepen our understanding of tissue repair and can identify potential biomarkers for therapeutic interventions, particularly in contexts where the experimental design is complicated by missing or difficult-to-collect data.</p>
+
+            <div style="max-width: 800px; margin: 0 auto; padding-left: 4rem; padding-right: 4rem;">
+
+            <ul class="actions">
+              <li><a href="https://www.biorxiv.org/content/10.1101/2024.12.23.630186v1.full.pdf" class="button primary" target="_blank">Paper</a></li>
+              <li><a href="https://github.com/Computational-Morphogenomics-Group/Ladder" class="button" target="_blank">GitHub</a></li>
+
+            </ul>
+            </div>
+              </article>
+   
+
+
+          <article>
+            <h4>Predictable Engineering of Signal-Dependent Cis-Regulatory Elements </h4>
+            <div class="authors"> Jake Cornwall-Scoones, Dirk Benzinger, <strong> Tianji Yu </strong>, Alberto Pezzotta, Andreas Sagner, Lina Gerontogianni, Shaun Bernadet, Elizabeth Finnie, Giulia LM Boezio, Hannah T Stuart, Manuela Melchionda, Oliver CK Inge, <strong> Bianca Dumitrascu </strong>  , James Briscoe, M Joaquina Delás
+            </div>
+            <img src="assets/images/projects/cisreg.png" alt="Cis-Regulatory Elements" />
+            <p> <strong> Summary </strong>: This work develops methods to engineer cis-regulatory elements with predictable responses to signal dynamics, using high-throughput measurements of enhancer activity. The findings contribute to a framework for transcriptional control in regenerative and developmental contexts.</p>
+           <p> <strong> Abstract </strong> Cis-regulatory elements (CREs) control how genes respond to external signals, but the
+            principles governing their structure and function remain poorly understood. While
+            differential transcription factor binding is known to regulate gene expression, how
+            CREs integrate the amount and combination of inputs to secure precise spatiotemporal
+            profiles of gene expression remains unclear. Here, we developed a high-throughput
+            combinatorial screening strategy, that we term NeMECiS, to investigate signal7 dependent synthetic CREs (synCREs) in differentiating mammalian stem cells. By concatenating fragments of functional CREs from genes that respond to Sonic Hedgehog in the developing vertebrate neural tube, we found that CRE activity follows hierarchical design rules. While individual 200-base-pair fragments showed minimal activity, their combinations generated thousands of functional signal-responsive synCREs, many exceeding the activity of natural sequences. Statistical modelling
+            revealed CRE function can be decomposed into specific quantitative contributions in
+            which sequence fragments combine through a multiplicative rule, tuned by their relative positioning and spacing. These findings provide a predictive framework for CRE redesign, which we used to engineer synthetic CREs that alter the pattern of motor neuron differentiation in neural tissue. These findings establish quantitative principles for engineering synthetic regulatory elements with programmable signal responses to rewire genetic circuits and control stem cell differentiation, providing a basis for understanding developmental gene regulation and designing therapeutic gene expression systems. </p>
+
+
+            <ul class="actions">
+              <li><a href="https://www.biorxiv.org/content/10.1101/2025.03.07.642002v1.full.pdf" class="button primary" target="_blank">Paper</a></li>
+            </ul>
+          </article>
+
+          <article>
+            <h4>Dynamic Cell Fate Plasticity and Tissue Integration in Synovial Joint Regeneration</h4>
+            <div class="authors">Maria Blumenkrantz, Felicia Woron, Ernesto Gagarin, Everett Weinstein, Maryam H Kamel, Leonardo Campos, <strong>Agnieszka Geras</strong>, Troy Anderson, Julia Mo, Desmarie Sherwood, Maya Gwin, <strong> Bianca Dumitrascu </strong>, Nadeen O Chahine, Joanna Smeeton </div>
+            <img src="assets/images/projects/jaw.png" alt="Joint Regeneration" />
+            <p> <strong> Summary: </strong>: This collaborative effort investigates the cellular plasticity underlying joint regeneration. It combines transcriptomic profiling with tissue integration assays in a model of synovial recovery in an adult zebrafish.</p>
+            <p> <strong> Abstract: </strong> Adult mammalian synovial joints have limited regenerative capacity, where injuries heal with mechanically inferior fibrotic tissues. Here we developed a unilateral whole-joint resection model in adult zebrafish to advance our understanding of how to stimulate regrowth of native synovial joint tissues. Using a combination of microCT, histological, live imaging, and single-cell RNA sequencing (scRNAseq) approaches after complete removal of all joint tissues, we find de novo regeneration of articular cartilage, ligament, and synovium into a functional joint. Clonal lineage tracing and scRNAseq implicate a multipotent, neural crest-derived population in the adult skeleton as a cell source for these regenerating tissues. Together, our findings reveal latent molecular and cellular programs within the adult skeleton that are deployed to regenerate a complex joint with lubricated articular cartilage.
+
+            <ul class="actions">
+              <li><a href="https://www.biorxiv.org/content/10.1101/2024.12.12.628180v1" class="button primary" target="_blank">Paper</a></li>
+            </ul>
+          </article>
+
+
+          <article>
+            <h4>Deep Learning for Bioimage Analysis in Developmental Biology </h4>
+            <div class="authors">Adrien Hallou, Hannah G. Yevick,  <strong><u> Bianca Dumitrascu  </u></strong>, <u> Virginie Uhlmann </u></div>
+            <img src="assets/images/projects/bioimage.png" alt="Bioimage Analysis" />
+            <p> <strong> Summary: </strong> This review looks at deep learning techniques for extracting interpretable patterns from biological imaging data. Applications span developmental processes, cellular phenotyping, and tissue-scale inference using convolutional neural networks and segmentation tools.</p>
+            <p> <strong> Abstract: </strong> Deep learning has transformed the way large and complex image datasets can be processed, reshaping what is possible in bioimage analysis. As the complexity and size of bioimage data continues to grow, this new analysis paradigm is becoming increasingly ubiquitous. In this Review, we begin by introducing the concepts needed for beginners to understand deep learning. We then review how deep learning has impacted bioimage analysis and explore the open-source resources available to integrate it into a research project. Finally, we discuss the future of deep learning applied to cell and developmental biology. We analyze how state-of-the-art methodologies have the potential to transform our understanding of biological systems through new image-based analysis and modelling that integrate multimodal inputs in space and time. </p>
+
+            <ul class="actions">
+              <li><a href="https://journals.biologists.com/dev/article/148/18/dev199616/272493/Deep-learning-for-bioimage-analysis-in" class="button primary" target="_blank">Paper</a></li>
+            </ul>
+          </article>
+
+
+        </section>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <p>&copy; Bianca Dumitrascu Lab 2025 · Creative Commons Attribution 4.0 International License</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/jquery.scrolly.min.js"></script>
+  <script src="assets/scripts/jquery.dropotron.min.js"></script>
+  <script src="assets/scripts/jquery.scrollex.min.js"></script>
+  <script src="assets/scripts/browser.min.js"></script>
+  <script src="assets/scripts/breakpoints.min.js"></script>
+  <script src="assets/scripts/util.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>
