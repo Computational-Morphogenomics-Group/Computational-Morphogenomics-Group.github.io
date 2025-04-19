@@ -1,3 +1,31 @@
+const CUSTOM_ROUTES = {
+  stgen: "from-cell-to-context.html",
+  regen: "self-organization.html",
+  intgen: "cmg-core-ml.html"
+};
+
+function buildProjects(projects){
+  var grid = document.getElementById("grid-projects");
+  grid.innerHTML = "";
+
+  for (var i = 0; i < projects.length; i++){
+    const customLink = CUSTOM_ROUTES[projects[i].projID] || `projectpages.html?projID=${projects[i].projID}`;
+    var block = 
+    `
+    <a class="col-6 col-6-xsmall" href="${customLink}" target="_blank" style="text-align: justify;">
+        <span class="image left"><img src="${projects[i].image}" alt=""/></span>
+        <h4 style="text-align: left;">${projects[i].name}</h4>
+        ${projects[i].shortdesc}
+    </a>
+    `;
+
+    grid.innerHTML += block;
+  }
+}
+
+
+
+
 const PROJINFO = [
     {
         projID : "stgen",

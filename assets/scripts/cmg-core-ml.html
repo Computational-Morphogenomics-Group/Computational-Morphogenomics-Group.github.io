@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Interpretable and Mechanistic Machine Learning | CMG</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/projects/butterfly.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <noscript><link rel="stylesheet" href="assets/styles/noscript.css" /></noscript>
+  <style>
+    .features article {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .features article img {
+      max-width: 450px;
+      width: 75%;
+      margin: 1.5rem auto;
+      display: block;
+    }
+    .features article h4 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .features article .authors {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .features article p {
+      text-align: justify;
+      margin: 1rem auto;
+      max-width: 800px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    header.major {
+      margin-top: 10rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+    .actions-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+    .actions li {
+      list-style: none;
+    }
+  </style>
+</head>
+<body class="preload">
+  <div id="wrapper">
+    <header id="header">
+      <h1 id="logo"><a href="index.html">Computational Morphogenomics Group</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main style1">
+      <div class="inner">
+        <header class="major">
+          <h2>🤖 Interpretable and Mechanistic Machine Learning</h2>
+          <p>What kinds of learning systems reveal biological mechanisms? This theme includes our work on interpretable and structured learning, physics-informed modeling, causal inference, and experiment design strategies for high-dimensional biological systems.</p>
+        </header>
+
+        <section class="features">
+
+<article>
+  <h4>MarkerMap: Nonlinear Marker Selection for Single-cell Studies</h4>
+  <div class="authors">Wilson Gregory, Nabeel Sarwar, George Kevrekidis, Soledad Villar, <strong><u>Bianca Dumitrascu</u></strong></div>
+  <p><strong>Summary:</strong> MarkerMap selects the most informative genes to distinguish cell types and reconstruct the transcriptome using a minimal gene set.</p>
+  <p><strong>Abstract:</strong> Single-cell RNA-seq data allow the quantification of cell type differences across a growing set of biological contexts. However, pinpointing a small subset of genomic features explaining this variability can be ill-defined and computationally intractable. Here we introduce MarkerMap, a generative model for selecting minimal gene sets which are maximally informative of cell type origin and enable whole transcriptome reconstruction. MarkerMap provides a scalable framework for both supervised marker selection, aimed at identifying specific cell type populations, and unsupervised marker selection, aimed at gene expression imputation and reconstruction. We benchmark MarkerMap’s competitive performance against previously published approaches on real single cell gene expression data sets. MarkerMap is available as a pip installable package, as a community resource aimed at developing explainable machine learning techniques for enhancing interpretability in single-cell studies.</p>
+</article>
+
+<article>
+  <h4>NARTI: Neural Algorithmic Reasoning for Trajectory Inference</h4>
+  <div class="authors">Dobrik Georgiev, Ramon Vinas, Sam Considine, <strong><u>Bianca Dumitrascu</u></strong>, Pietro Lió</div>
+  <p><strong>Summary:</strong> NARTI is an end-to-end differentiable system for inferring cellular developmental paths from single-cell data.</p>
+  <p><strong>Abstract:</strong> Trajectory inference algorithms aim to reconstruct the developmental trajectory of single cells from high-dimensional gene expression data. To solve this problem, standard techniques employ multistep pipelines, which may have information barriers, raising the question of potential benefits in end-to-end differentiable alternatives. Here we leverage some of the latest advances in neural algorithmic reasoning to propose NARTI (Neural Algorithmic Reasoning for Trajectory Inference), an end-to-end differentiable replacement to classical algorithms. We conduct an extensive comparative analysis and show that NARTI attains competitive performance over a broad range of scRNA-seq datasets. We believe that NARTI can facilitate a seamless integration of multiple steps from standard trajectory inference techniques.</p>
+</article>
+
+<article>
+  <h4>Dimensionless Machine Learning: Imposing Exact Units Equivariance</h4>
+  <div class="authors">Soledad Villar, Weichi Yao, David W Hogg, Ben Blum-Smith, <strong><u>Bianca Dumitrascu</u></strong></div>
+  <p><strong>Summary:</strong> This framework guarantees that machine learning models obey the physical laws of unit consistency by working in dimensionless spaces.</p>
+  <p><strong>Abstract:</strong> Units equivariance (or units covariance) is the exact symmetry that follows from the requirement that relationships among measured quantities of physics relevance must obey self-consistent dimensional scalings. Here, we express this symmetry in terms of a (non-compact) group action, and we employ dimensional analysis and ideas from equivariant machine learning to provide a methodology for exactly units-equivariant machine learning: For any given learning task, we first construct a dimensionless version of its inputs using classic results from dimensional analysis and then perform inference in the dimensionless space. Our approach can be used to impose units equivariance across a broad range of machine learning methods that are equivariant to rotations and other groups. We discuss the in-sample and out-of-sample prediction accuracy gains one can obtain in contexts like symbolic regression and emulation, where symmetry is important. We illustrate our approach with simple numerical examples involving dynamical systems in physics and ecology.</p>
+</article>
+
+<article>
+  <h4>Approximate Latent Force Model Inference</h4>
+  <div class="authors">Jacob D Moss, Felix L Opolka, <strong><u>Bianca Dumitrascu</u></strong>, Pietro Lió</div>
+  <p><strong>Summary:</strong> This paper introduces a scalable way to use interpretable differential equation-based models in complex biological systems.</p>
+  <p><strong>Abstract:</strong> Physically-inspired latent force models offer an interpretable alternative to purely data driven tools for inference in dynamical systems. They carry the structure of differential equations and the flexibility of Gaussian processes, yielding interpretable parameters and dynamics-imposed latent functions. However, the existing inference techniques associated with these models rely on the exact computation of posterior kernel terms which are seldom available in analytical form. Most applications relevant to practitioners, such as Hill equations or diffusion equations, are hence intractable. In this paper, we overcome these computational problems by proposing a variational solution to a general class of non-linear and parabolic partial differential equation latent force models. Further, we show that a neural operator approach can scale our model to thousands of instances, enabling fast, distributed computation. We demonstrate the efficacy and flexibility of our framework by achieving competitive performance on several tasks where the kernels are of varying degrees of tractability.</p>
+</article>
+
+<article>
+  <h4>Patient-Specific Effects of Medication Using Latent Force Models</h4>
+  <div class="authors">Li-Fang Cheng, <strong><u>Bianca Dumitrascu</u></strong>, Michael Zhang, Corey Chivers, Michael Draugelis, Kai Li, Barbara Engelhardt</div>
+  <p><strong>Summary:</strong> A model that learns how different patients respond to medications using interpretable latent dynamics in hospital data.</p>
+  <p><strong>Abstract:</strong> A multi-output Gaussian process (GP) is a flexible Bayesian nonparametric framework that has proven useful in jointly modeling the physiological states of patients in medical time series data. However, capturing the short-term effects of drugs and therapeutic interventions on patient physiological state remains challenging. We propose a novel approach that models the effect of interventions as a hybrid Gaussian process composed of a GP capturing patient baseline physiology convolved with a latent force model capturing effects of treatments on specific physiological features. The combination of a multi-output GP with a time-marked kernel GP leads to a well-characterized model of patients’ physiological state across a hospital stay, including response to interventions. Our model leads to analytically tractable cross-covariance functions that allow for scalable inference. Our hierarchical model includes estimates of patient-specific effects but allows sharing of support across patients. Our approach achieves competitive predictive performance on challenging hospital data, where we recover patient-specific response to the administration of three common drugs: one antihypertensive drug and two anticoagulants.</p>
+</article>
+
+<article>
+  <h4>End-to-End Training of Deep Probabilistic CCA</h4>
+  <div class="authors">Gregory Gundersen, <strong><u>Bianca Dumitrascu</u></strong>, Jordan T Ash, Barbara E Engelhardt</div>
+  <p><strong>Summary:</strong> A joint deep learning framework that connects pathology images with gene expression, helping discover interpretable molecular features.</p>
+  <p><strong>Abstract:</strong> Medical pathology images are visually evaluated by experts for disease diagnosis, but the connection between image features and the state of the cells in an image is typically unknown. To understand this relationship, we develop a multimodal modeling and inference framework that estimates shared latent structure of joint gene expression levels and medical image features. Our method is built around probabilistic canonical correlation analysis (PCCA), which is fit to image embeddings that are learned using convolutional neural networks and linear embeddings of paired gene expression data. Using a differentiable take on the EM algorithm, we train the model end-to-end so that the PCCA and neural network parameters are estimated simultaneously. We demonstrate the utility of this method in constructing image features that are predictive of gene expression levels on simulated data and the Genotype-Tissue Expression data. We demonstrate that the latent variables are interpretable by disentangling the latent subspace through shared and modality-specific views.</p>
+</article>
+
+<article>
+  <h4>PG-TS: Improved Thompson Sampling for Logistic Contextual Bandits</h4>
+  <div class="authors"><strong><u>Bianca Dumitrascu</u></strong>, Karen Feng, Barbara Engelhardt</div>
+  <p><strong>Summary:</strong> PG-TS enhances decision-making in bandit problems using Bayesian inference and Polya-Gamma augmentation for faster, smarter exploration.</p>
+  <p><strong>Abstract:</strong> We address the problem of regret minimization in logistic contextual bandits, where a learner decides among sequential actions or arms given their respective contexts to maximize binary rewards. Using a fast inference procedure with Polya-Gamma distributed augmentation variables, we propose an improved version of Thompson Sampling, a Bayesian formulation of contextual bandits with near-optimal performance. Our approach, Polya-Gamma augmented Thompson Sampling (PG-TS), achieves state-of-the-art performance on simulated and real data. PG-TS explores the action space efficiently and exploits high-reward arms, quickly converging to solutions of low regret. Its explicit estimation of the posterior distribution of the context feature covariance leads to substantial empirical gains over approximate approaches. PG-TS is the first approach to demonstrate the benefits of Polya-Gamma augmentation in bandits and to propose an efficient Gibbs sampler for approximating the analytically unsolvable integral of logistic contextual bandits.</p>
+</article>
+
+<article>
+  <h4>GT-TS: Experimental Design for Maximizing Cell Type Discovery</h4>
+  <div class="authors"><strong><u>Bianca Dumitrascu</u></strong>, Karen Feng, Barbara E Engelhardt</div>
+  <p><strong>Summary:</strong> GT-TS helps plan which tissue samples to collect in scRNA-seq studies to maximize cell type discovery under budget constraints.</p>
+  <p><strong>Abstract:</strong> We present the Good-Toulmin like estimator via Thompson sampling, a computational method for iterative experimental design in multi-tissue single-cell RNA-seq (scRNA-seq) data. Given a budget and modeling cell type information across tissues, GT-TS estimates how many cells are required for sampling from each tissue with the goal of maximizing cell type discovery across samples from multiple iterations. In both real and simulated data, we demonstrate the advantages of GT-TS in data collection planning when compared to a random strategy in the absence of experimental design.</p>
+</article>
+
+       </section>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <p>&copy; Bianca Dumitrascu Lab 2025 · Creative Commons Attribution 4.0 International License</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/jquery.scrolly.min.js"></script>
+  <script src="assets/scripts/jquery.dropotron.min.js"></script>
+  <script src="assets/scripts/jquery.scrollex.min.js"></script>
+  <script src="assets/scripts/browser.min.js"></script>
+  <script src="assets/scripts/breakpoints.min.js"></script>
+  <script src="assets/scripts/util.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>
