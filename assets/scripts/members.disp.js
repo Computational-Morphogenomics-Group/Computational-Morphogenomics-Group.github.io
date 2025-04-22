@@ -4,52 +4,74 @@ const ACTIVE = [
     {
         name : "Bianca Dumitrascu", 
         title : "Group Leader",
-        image : "assets/images/members/bianca-dumitrascu.png", 
+        image : "assets/images/members/bianca-dumitrascu.png",
+        link : "https://computational-morphogenomics-group.github.io/", 
     },
     {
         name : "Agnieszka Geras", 
         title : "Postdoctoral Researcher",
-        image : "assets/images/members/agnieszka-geras.jpg", 
+        image : "assets/images/members/agnieszka-geras.jpg",
+        link : "https://cancerdynamics.columbia.edu/agnieszka-geras", 
     },
+    {
+        name : "Lambda Moses", 
+        title : "Postdoctoral Researcher",
+        image : "assets/images/members/lambda-moses.png",
+        link : "https://cancerdynamics.columbia.edu/lambda-moses", 
+    },    
     {
         name : "Claire He", 
         title : "Doctoral Student",
-        image : "assets/images/members/claire-he.png", 
+        image : "assets/images/members/claire-he.png",
+        link : "https://cancerdynamics.columbia.edu/claire-ming-yi-he", 
     }, 
     {
         name : "Ruiyang He", 
         title : "Doctoral Student",
-        image : "assets/images/members/ruiyang-he.png", 
+        image : "assets/images/members/ruiyang-he.png",
+        link : "https://cancerdynamics.columbia.edu/ruiyang-he", 
     },
     {
         name : "Tianji Yu", 
         title : "Doctoral Student",
         image : "assets/images/members/tianji-yu.png", 
+        link : "https://cancerdynamics.columbia.edu/tianji-yu",
     },  
     {
         name : "Mia Dai", 
         title : "Doctoral Student (Rotating)",
-        image : "assets/images/members/mia-dai.jpeg", 
+        image : "assets/images/members/mia-dai.jpeg",
+        link : "https://xinming-dai.github.io/", 
     },
     {
         name : "Michael Pressler", 
         title : "Doctoral Student (Rotating)",
-        image : "assets/images/members/michael-pressler.jpeg", 
+        image : "assets/images/members/michael-pressler.jpeg",
+        link : "https://cancerdynamics.columbia.edu/michael-p-pressler", 
     }, 
     {
         name : "Ting Chen", 
         title : "Doctoral Student (Rotating)",
-        image : "assets/images/members/ting-chen.jpg", 
-    }, 
+        image : "assets/images/members/ting-chen.jpg",
+        link : "https://tingtang2.github.io", 
+    },
+    {
+        name : "Etowah Adams", 
+        title : "Doctoral Student (Rotating)",
+        image : "assets/images/members/etowah-adams.jpg",
+        link : "https://etowahadams.com/", 
+    },  
     {
         name : "Özgür Yılmaz Beker", 
         title : "Research Assistant",
-        image : "assets/images/members/ozgur-yilmaz-beker.png", 
+        image : "assets/images/members/ozgur-yilmaz-beker.png",
+        link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
     },
     {
         name : "Jiahui Zhu", 
         title : "Undergraduate Student",
-        image : "assets/images/members/jiahui-zhu.jpg", 
+        image : "assets/images/members/jiahui-zhu.jpg",
+        link : "https://computational-morphogenomics-group.github.io/", 
     },
 ]
 
@@ -59,18 +81,21 @@ const ALUMNI = [
     {
         name : "Craig Fouts", 
         title : "Machine Learning Engineer @Vickovic Lab",
-        image : "assets/images/members/craig-fouts.png", 
+        image : "assets/images/members/craig-fouts.png",
+        link: "https://www.craigfouts.com/",
     },
 	
 	{
         name : "Jose Pomarino Nima", 
         title : "Masters Student",
-        image : "assets/images/members/jose-pomarino-nima.png", 
+        image : "assets/images/members/jose-pomarino-nima.png",
+        link: "https://computational-morphogenomics-group.github.io/",  
     },
     {
         name : "Harry Kabodha", 
         title : "Masters Student",
-        image : "assets/images/members/harry-kabodha.png", 
+        image : "assets/images/members/harry-kabodha.png",
+        link: "https://cancerdynamics.columbia.edu/harry-edward-igulu-kabodha", 
     },  
 ]
 
@@ -94,7 +119,7 @@ function buildMembers(data, grid_id){
 
         var block = 
         `
-        <a class="col-3 col-6-xsmall" href="">
+        <a class="col-3 col-6-xsmall" href="${data[i].link}", target='_blank'>
 			<span class="image fit"><img src=${data[i].image} alt=""/></span>
 			<h4>${data[i].name}</h4>
 			<p>${data[i].title}</p>
