@@ -5,6 +5,7 @@ $(document).ready(function() {
   // Add new papers here. Each paper object includes:
   // name, link, authors, tags, source, icon, and year.
   const PAPERS = [
+    
     {
       name: "A computational pipeline for spatial mechano-transcriptomics",
       link: "https://www.nature.com/articles/s41592-025-02618-1",
@@ -12,6 +13,15 @@ $(document).ready(function() {
       tags: ["spatial transcriptomics", "mechanics","development"],
       source: "Nature Methods 22, 737–750",
       icon: "assets/images/projects/tension.png",
+      year: "2025"
+    },
+    {
+      name: "Predictable Engineering of Signal-Dependent Cis-Regulatory Elements",
+      link: "https://www.biorxiv.org/content/10.1101/2025.03.07.642002v1.full.pdf",
+      authors: `Jake Cornwall-Scoones, Dirk Benzinger, Tianji Yu, Alberto Pezzotta, Andreas Sagner, Lina Gerontogianni, Shaun Bernadet, Elizabeth Finnie, Giulia LM Boezio, Hannah T Stuart, Manuela Melchionda, Oliver CK Inge, Bianca Dumitrascu, James Briscoe, M Joaquina Delás`,
+      tags: ["synthetic design", "gene regulation","development"],
+      source: "bioRxiv",
+      icon: "assets/images/projects/gear.png",
       year: "2025"
     },
     
