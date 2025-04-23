@@ -5,7 +5,7 @@ const ACTIVE = [
         name : "Bianca Dumitrascu", 
         title : "Group Leader",
         image : "assets/images/members/bianca-dumitrascu.png",
-        link : "https://computational-morphogenomics-group.github.io/", 
+        link : "bianca.html", 
     },
     {
         name : "Agnieszka Geras", 
