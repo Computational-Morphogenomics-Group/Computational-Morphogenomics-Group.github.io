@@ -6,6 +6,16 @@ $(document).ready(function() {
   // name, link, authors, tags, source, icon, and year.
   const PAPERS = [
     {
+      name: "A computational pipeline for spatial mechano-transcriptomics",
+      link: "https://www.nature.com/articles/s41592-025-02618-1",
+      authors: `Adrien Hallou, Ruiyang He, Benjamin D. Simons, Bianca Dumitrascu`,
+      tags: ["spatial transcriptomics", "mechanics","development"],
+      source: "Nature Methods 22, 737–750",
+      icon: "assets/images/projects/tension.png",
+      year: "2025"
+    },
+    
+    {
       name: "Gene-level alignment of single-cell trajectories",
       link: "https://www.nature.com/articles/s41592-024-02378-4",
       authors: `Dinithi Sumanaweera, Chenqu Suo, Ana-Maria Cujba, Daniele Muraro, Emma Dann, Krzysztof Polanski, Alexander S Steemers, Woochan Lee, Amanda J Oliver, Jong-Eun Park, Kerstin B Meyer, Bianca Dumitrascu, Sarah A Teichmann`,
