@@ -60,6 +60,12 @@ const ACTIVE = [
         title : "Doctoral Student (Rotating)",
         image : "assets/images/members/etowah-adams.jpg",
         link : "https://etowahadams.com/", 
+    },
+    {
+        name : "Cynthia Tianxin Wang", 
+        title : "Doctoral Student (Rotating)",
+        image : "assets/images/members/cynthia-tianxin-wang.png",
+        link : "https://www.linkedin.com/in/cynthia-wang-69423b1aa/", 
     },  
     {
         name : "Özgür Yılmaz Beker", 
