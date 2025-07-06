@@ -21,22 +21,16 @@ const ACTIVE = [
     },    
     {
         name : "Ruiyang He", 
-        title : "Joint Doctoral Student (with the Vickovic Lab)",
+        title : "Joint Doctoral Student (Vickovic Lab)",
         image : "assets/images/members/ruiyang-he.png",
         link : "https://cancerdynamics.columbia.edu/ruiyang-he", 
     },
     {
         name : "Tianji Yu", 
-        title : "Joint Doctoral Student (with the Zhang Lab)",
+        title : "Joint Doctoral Student (Zhang Lab)",
         image : "assets/images/members/tianji-yu.png", 
         link : "https://cancerdynamics.columbia.edu/tianji-yu",
-    },  
-    {
-        name : "Mia Dai", 
-        title : "Rotation Student",
-        image : "assets/images/members/mia-dai.jpeg",
-        link : "https://xinming-dai.github.io/", 
-    },
+    }, 
     {
         name : "Michael Pressler", 
         title : "Rotation Student",
@@ -55,12 +49,6 @@ const ACTIVE = [
         image : "assets/images/members/etowah-adams.jpg",
         link : "https://etowahadams.com/", 
     },
-    {
-        name : "Cynthia Tianxin Wang", 
-        title : "Rotation Student",
-        image : "assets/images/members/cynthia-tianxin-wang.png",
-        link : "https://www.linkedin.com/in/cynthia-wang-69423b1aa/", 
-    },  
     {
         name : "Özgür Yılmaz Beker", 
         title : "Research Assistant",
