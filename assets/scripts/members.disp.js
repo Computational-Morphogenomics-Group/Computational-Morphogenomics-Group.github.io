@@ -12,7 +12,19 @@ const ACTIVE = [
         title : "Postdoctoral Researcher",
         image : "assets/images/members/lambda-moses.png",
         link : "https://cancerdynamics.columbia.edu/lambda-moses", 
-    },    
+    }, 	
+    {
+        name : "Özgür Yılmaz Beker", 
+        title : "Doctoral Student",
+        image : "assets/images/projects/",
+        link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
+    },
+	{
+        name : "Haochen Yang", 
+        title : "Doctoral Student",
+        image : "assets/images/projects/development.png",
+        link : "https://www.dbmi.columbia.edu/phd-students/", 
+    },
     {
         name : "Ruiyang He", 
         title : "Joint Doctoral Student (Vickovic Lab)",
@@ -24,19 +36,7 @@ const ACTIVE = [
         title : "Rotation Student",
         image : "assets/images/members/michael-pressler.jpeg",
         link : "https://cancerdynamics.columbia.edu/michael-p-pressler", 
-    }, 
-    {
-        name : "Özgür Yılmaz Beker", 
-        title : "Research Assistant",
-        image : "assets/images/members/ozgur-yilmaz-beker.png",
-        link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
-    },
-    {
-        name : "Jiahui Zhu", 
-        title : "Undergraduate Student",
-        image : "assets/images/members/jiahui-zhu.jpg",
-        link : "https://computational-morphogenomics-group.github.io/", 
-    },
+    }
 ]
 
 // Alumni go here
