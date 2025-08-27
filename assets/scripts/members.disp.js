@@ -8,12 +8,6 @@ const ACTIVE = [
         link : "bianca.html", 
     },
     {
-        name : "Agnieszka Geras", 
-        title : "Postdoctoral Researcher",
-        image : "assets/images/members/agnieszka-geras.jpg",
-        link : "https://cancerdynamics.columbia.edu/agnieszka-geras", 
-    },
-    {
         name : "Lambda Moses", 
         title : "Postdoctoral Researcher",
         image : "assets/images/members/lambda-moses.png",
@@ -26,29 +20,11 @@ const ACTIVE = [
         link : "https://cancerdynamics.columbia.edu/ruiyang-he", 
     },
     {
-        name : "Tianji Yu", 
-        title : "Joint Doctoral Student (Zhang Lab)",
-        image : "assets/images/members/tianji-yu.png", 
-        link : "https://cancerdynamics.columbia.edu/tianji-yu",
-    }, 
-    {
         name : "Michael Pressler", 
         title : "Rotation Student",
         image : "assets/images/members/michael-pressler.jpeg",
         link : "https://cancerdynamics.columbia.edu/michael-p-pressler", 
     }, 
-    {
-        name : "Ting Chen", 
-        title : "Rotation Student",
-        image : "assets/images/members/ting-chen.jpg",
-        link : "https://tingtang2.github.io", 
-    },
-    {
-        name : "Etowah Adams", 
-        title : "Rotation Student",
-        image : "assets/images/members/etowah-adams.jpg",
-        link : "https://etowahadams.com/", 
-    },
     {
         name : "Özgür Yılmaz Beker", 
         title : "Research Assistant",
