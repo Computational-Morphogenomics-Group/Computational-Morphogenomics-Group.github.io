@@ -16,7 +16,7 @@ const ACTIVE = [
     {
         name : "Özgür Yılmaz Beker", 
         title : "Doctoral Student",
-        image : "assets/images/projects/",
+        image : "assets/images/projects/ozgur-yilmaz-beker.png",
         link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
     },
 	{
