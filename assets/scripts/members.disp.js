@@ -16,7 +16,7 @@ const ACTIVE = [
     {
         name : "Özgür Yılmaz Beker", 
         title : "Doctoral Student",
-        image : "assets/images/members/ozgur-yilmaz-beker.png",
+        image : "assets/images/projects/development.png",
         link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
     },
 	{
@@ -30,6 +30,12 @@ const ACTIVE = [
         title : "Joint Doctoral Student (Vickovic Lab)",
         image : "assets/images/members/ruiyang-he.png",
         link : "https://cancerdynamics.columbia.edu/ruiyang-he", 
+    },
+	{
+        name : "Samuel Gunz", 
+        title : "Visiting Doctoral Student (Robinson Lab, UZH)",
+        image : "assets/images/projects/development.png",
+        link : "https://www.mls.uzh.ch/en/research/robinson/groupmembers/samuel-gunz.html", 
     },
     {
         name : "Michael Pressler", 
