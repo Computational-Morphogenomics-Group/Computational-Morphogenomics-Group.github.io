@@ -16,8 +16,14 @@ const ACTIVE = [
     {
         name : "Özgür Yılmaz Beker", 
         title : "Doctoral Student",
-        image : "assets/images/projects/development.png",
+        image : "assets/images/members/ozgur-yilmaz-beker.png",
         link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
+    },
+    {
+        name : "Beini Wang", 
+        title : "Masters Student",
+        image : "assets/images/members/beini-wang.jpg",
+        link : "https://www.morpho-lab.com/members.html", 
     },
 	{
         name : "Haochen Yang", 
