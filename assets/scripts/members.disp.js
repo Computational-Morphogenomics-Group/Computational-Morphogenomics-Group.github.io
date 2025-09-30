@@ -28,7 +28,7 @@ const ACTIVE = [
 	{
         name : "Haochen Yang", 
         title : "Doctoral Student",
-        image : "assets/images/projects/development.png",
+        image : "assets/images/members/haochen-yang.jpg",
         link : "https://www.dbmi.columbia.edu/phd-students/", 
     },
     {
@@ -40,7 +40,7 @@ const ACTIVE = [
 	{
         name : "Samuel Gunz", 
         title : "Visiting Doctoral Student (Robinson Lab, UZH)",
-        image : "assets/images/projects/development.png",
+        image : "assets/images/members/samuel-gunz.jpg",
         link : "https://www.mls.uzh.ch/en/research/robinson/groupmembers/samuel-gunz.html", 
     },
     {
