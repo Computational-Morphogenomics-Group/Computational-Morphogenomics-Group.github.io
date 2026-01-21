@@ -19,17 +19,17 @@ const ACTIVE = [
         image : "assets/images/members/ozgur-yilmaz-beker.png",
         link : "https://cancerdynamics.columbia.edu/ozgur-beker", 
     },
-    {
-        name : "Beini Wang", 
-        title : "Masters Student",
-        image : "assets/images/members/beini-wang.jpg",
-        link : "https://www.morpho-lab.com/members.html", 
-    },
 	{
         name : "Haochen Yang", 
         title : "Doctoral Student",
         image : "assets/images/members/haochen-yang.jpg",
         link : "https://www.dbmi.columbia.edu/phd-students/", 
+    },
+	{
+        name : "Michael Pressler", 
+        title : "Doctoral Student",
+        image : "assets/images/members/michael-pressler.jpeg",
+        link : "https://cancerdynamics.columbia.edu/michael-p-pressler", 
     },
     {
         name : "Ruiyang He", 
@@ -42,25 +42,25 @@ const ACTIVE = [
         title : "Visiting Doctoral Student (Robinson Lab, UZH)",
         image : "assets/images/members/samuel-gunz.jpg",
         link : "https://www.mls.uzh.ch/en/research/robinson/groupmembers/samuel-gunz.html", 
-    },
-    {
-        name : "Michael Pressler", 
-        title : "Rotation Student",
-        image : "assets/images/members/michael-pressler.jpeg",
-        link : "https://cancerdynamics.columbia.edu/michael-p-pressler", 
     }
+
 ]
 
 // Alumni go here
 const ALUMNI = [
 	
     {
+        name : "Beini Wang", 
+        title : "Masters Student, now at TikTok",
+        image : "assets/images/members/beini-wang.jpg",
+        link : "https://www.morpho-lab.com/members.html", 
+    },
+    {
         name : "Craig Fouts", 
-        title : "Machine Learning Engineer @Vickovic Lab",
+        title : "Masters Student, now at Machine Learning Engineer @Vickovic Lab",
         image : "assets/images/members/craig-fouts.png",
         link: "https://www.craigfouts.com/",
     },
-	
 	{
         name : "Jose Pomarino Nima", 
         title : "Masters Student",
@@ -73,6 +73,12 @@ const ALUMNI = [
         image : "assets/images/members/harry-kabodha.png",
         link: "https://cancerdynamics.columbia.edu/harry-edward-igulu-kabodha", 
     },  
+	 {
+        name : "Lilly Wollman", 
+        title : "Masters Student, ",
+        image : "assets/images/projects/development.png",
+        link: "https://https://synteny.ai/", 
+    }
 ]
 
 
