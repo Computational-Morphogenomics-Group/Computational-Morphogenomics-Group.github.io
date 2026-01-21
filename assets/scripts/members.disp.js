@@ -75,7 +75,7 @@ const ALUMNI = [
     },  
 	 {
         name : "Lilly Wollman", 
-        title : "Masters Student, ",
+        title : "Masters Student, now CEO at Synteny AI",
         image : "assets/images/projects/development.png",
         link: "https://https://synteny.ai/", 
     }
