@@ -37,12 +37,12 @@ const ACTIVE = [
         image : "assets/images/members/ruiyang-he.png",
         link : "https://cancerdynamics.columbia.edu/ruiyang-he", 
     },
-	{
-        name : "Samuel Gunz", 
-        title : "Visiting Doctoral Student (Robinson Lab, UZH)",
-        image : "assets/images/members/samuel-gunz.jpg",
-        link : "https://www.mls.uzh.ch/en/research/robinson/groupmembers/samuel-gunz.html", 
-    }
+     {
+        name : "Dingcheng Yi", 
+        title : " Rotational PhD student in Systems Biology",
+        image : "assets/images/members/dingcheng-yi.jpg",
+        link : "https://purkinje-cell.github.io/", 
+    },
 
 ]
 
@@ -78,7 +78,13 @@ const ALUMNI = [
         title : "Masters Student, now CEO at Synteny AI",
         image : "assets/images/projects/development.png",
         link: "https://https://synteny.ai/", 
-    }
+    },
+    	{
+        name : "Samuel Gunz", 
+        title : "Visiting Doctoral Student (Robinson Lab, UZH)",
+        image : "assets/images/members/samuel-gunz.jpg",
+        link : "https://www.mls.uzh.ch/en/research/robinson/groupmembers/samuel-gunz.html", 
+    },
 ]
 
 
