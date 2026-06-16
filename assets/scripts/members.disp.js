@@ -45,13 +45,13 @@ const ACTIVE = [
     },
     {
         name: "Eddie Kong",
-        title: "Master's Student",
+        title: "MSc Intern",
         image: "assets/images/members/eddie-kong.jpg",
         link: "https://www.morpho-lab.com/members.html",
     },
     {
         name: "Gilyana Dorzhieva",
-        title: "Research Intern",
+        title: "Undergraduate Research Intern",
         image: "assets/images/members/gilyana-dorzhieva.jpg",
         link: "https://www.morpho-lab.com/members.html",
     }
@@ -62,52 +62,54 @@ const ALUMNI = [
 
     {
         name: "Beini Wang",
-        title: "Masters Student, now at TikTok",
+        title: "MA Intern, now at TikTok",
         image: "assets/images/members/beini-wang.jpg",
         link: "https://www.morpho-lab.com/members.html",
     },
     {
         name: "Craig Fouts",
-        title: "Masters Student, now at Machine Learning Engineer @Vickovic Lab",
+        title: "MSc Intern, now at Machine Learning Engineer @Vickovic Lab",
         image: "assets/images/members/craig-fouts.png",
         link: "https://www.craigfouts.com/",
     },
-    {
-        name: "Jose Pomarino Nima",
-        title: "Masters Student",
-        image: "assets/images/members/jose-pomarino-nima.png",
-        link: "https://computational-morphogenomics-group.github.io/",
-    },
-    {
-        name: "Harry Kabodha",
-        title: "Masters Student",
-        image: "assets/images/members/harry-kabodha.png",
-        link: "https://cancerdynamics.columbia.edu/harry-edward-igulu-kabodha",
-    },
-    {
-        name: "Lilly Wollman",
-        title: "Masters Student, now CEO at Synteny AI",
-        image: "assets/images/projects/development.png",
-        link: "https://https://synteny.ai/",
-    },
+	
     {
         name: "Samuel Gunz",
-        title: "Visiting Doctoral Student (Robinson Lab, UZH)",
+        title: "Visiting PhD Student (Robinson Lab, UZH)",
         image: "assets/images/members/samuel-gunz.jpg",
         link: "https://www.mls.uzh.ch/en/research/robinson/groupmembers/samuel-gunz.html",
     },
     {
+        name: "Jose Pomarino Nima",
+        title: "MSc Intern",
+        image: "assets/images/members/jose-pomarino-nima.png",
+        link: "https://www.morpho-lab.com/members.html",
+    },
+    {
+        name: "Harry Kabodha",
+        title: "MSc Student",
+        image: "assets/images/members/harry-kabodha.png",
+        link: "https://cancerdynamics.columbia.edu/harry-edward-igulu-kabodha",
+    },
+    {
         name: "Ruiyang He",
-        title: "Joint Doctoral Student (Vickovic Lab)",
+        title: " MPhil Student, currently PhD Student in BioEngineering (Vickovic Lab, Columbia University)",
         image: "assets/images/members/ruiyang-he.png",
         link: "https://cancerdynamics.columbia.edu/ruiyang-he",
     },
     {
-        name: "Dingcheng Yi",
-        title: " Rotational PhD student in Systems Biology",
-        image: "assets/images/members/dingcheng-yi.jpg",
-        link: "https://purkinje-cell.github.io/",
+        name: "Ruben Weitzman",
+        title: " MPhil Student, currently PhD student in Computer Science (with Yarin Gal and Debora Marks, Oxford University)",
+        image: "assets/images/projects/development.png",
+        link: "https://rubenweitzman.github.io/",
     },
+	
+    {
+        name: "Lilly Wollman",
+        title: "MA Student, currently at Synteny AI",
+        image: "assets/images/projects/development.png",
+        link: "https://synteny.ai/",
+    }
 ]
 
 
