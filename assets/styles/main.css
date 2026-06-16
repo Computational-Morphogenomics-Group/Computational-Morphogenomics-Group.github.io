@@ -4113,3 +4113,26 @@ body.is-touch #banner {
 .inactive {
 	pointer-events: none;
 }
+
+/* ===== GSAP About Section ===== */
+
+/* Floating-particle canvas behind the About spotlight */
+.about-particles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+/* Ensure the .content panel renders above the canvas */
+#about .content {
+	z-index: 1;
+}
+
+/* GPU-hint for elements GSAP will animate */
+[data-gsap] {
+	will-change: transform, opacity, clip-path;
+}

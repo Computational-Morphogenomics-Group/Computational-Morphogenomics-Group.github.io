@@ -1,16 +1,79 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Add new years here
-  const YEARS = ["2025", "2024", "2023", "2021"];
+  const YEARS = ["2026", "2025", "2024", "2023", "2021"];
 
   // Add new papers here. Each paper object includes:
   // name, link, authors, tags, source, icon, and year.
   const PAPERS = [
-    
+    {
+      name: "Single-cell morphodynamics predict cell fate decisions during mucociliary epithelial differentiation",
+      link: "https://doi.org/10.1038/s44320-026-00212-x",
+      authors: `M Tolonen, Z Xu, O Beker, V Kapoor, B Dumitrascu, J Sedzinski`,
+      tags: ["single-cell", "morphodynamics", "cell fate", "development"],
+      source: "Molecular Systems Biology, 1-30",
+      icon: "assets/images/projects/onecell.png",
+      year: "2026"
+    },
+    {
+      name: "Patches: A representation learning framework for decoding shared and condition-specific transcriptional programs in wound healing",
+      link: "https://doi.org/10.1101/2024.12.23.630186",
+      authors: `O Beker, S Van Deursen, M Tarnow, D Amador, JC Cheong, JFP Nima, ...`,
+      tags: ["representation learning", "wound healing", "single-cell", "deep learning"],
+      source: "bioRxiv, 2024.12.23.630186",
+      icon: "assets/images/projects/patches.png",
+      year: "2026"
+    },
+    {
+      name: "Bilateral symmetry and robustness during axis elongation in Drosophila",
+      link: "https://meetings-archive.aps.org/smt/2026/mar-l60/3/",
+      authors: `T Qiu, AD Countryman, S Gunz, B Wang, B Dumitrascu, KE Kasza`,
+      tags: ["development", "biophysics", "symmetry"],
+      source: "APS Global Physics Summit 2026",
+      icon: "assets/images/projects/development.png",
+      year: "2026"
+    },
+    {
+      name: "Goal-Oriented Influence-Maximizing Data Acquisition for Learning and Optimization",
+      link: "https://arxiv.org/abs/2602.19578",
+      authors: `W Yao, B Dumitrascu, BR Goldsmith, Y Wang`,
+      tags: ["experimental design", "optimization", "machine learning"],
+      source: "arXiv preprint arXiv:2602.19578",
+      icon: "assets/images/projects/gear.png",
+      year: "2026"
+    },
+    {
+      name: "Wayfarer: A multiscale framework for spatial analysis of tumor progression",
+      link: "https://doi.org/10.64898/2026.02.16.706245",
+      authors: `L Moses, A Herault, L Cabon, B Dumitrascu`,
+      tags: ["spatial transcriptomics", "tumor progression", "multiscale"],
+      source: "bioRxiv, 2026.02.16.706245",
+      icon: "assets/images/projects/onecell.png",
+      year: "2026"
+    },
+    {
+      name: "A quantitative coordinate system for developmental dynamics",
+      link: "https://doi.org/10.64898/2026.06.09.730858",
+      authors: `J Wang, J Ren, C Moore, RN Kelsh, K McDole, B Dumitrascu, JC Marioni`,
+      tags: ["development", "spatial transcriptomics", "coordinate systems"],
+      source: "bioRxiv, 2026.06.09.730858",
+      icon: "assets/images/projects/development.png",
+      year: "2026"
+    },
+    {
+      name: "Variational Learning of Disentangled Representations",
+      link: "https://arxiv.org/abs/2506.17182",
+      authors: `Y Slavutsky, O Beker, D Blei, B Dumitrascu`,
+      tags: ["variational inference", "disentangled representations", "machine learning"],
+      source: "arXiv preprint arXiv:2506.17182",
+      icon: "assets/images/projects/gear.png",
+      year: "2025"
+    },
+
     {
       name: "A computational pipeline for spatial mechano-transcriptomics",
       link: "https://www.nature.com/articles/s41592-025-02618-1",
       authors: `Adrien Hallou, Ruiyang He, Benjamin D. Simons, Bianca Dumitrascu`,
-      tags: ["spatial transcriptomics", "mechanics","development"],
+      tags: ["spatial transcriptomics", "mechanics", "development"],
       source: "Nature Methods 22, 737–750",
       icon: "assets/images/projects/tension.png",
       year: "2025"
@@ -19,12 +82,12 @@ $(document).ready(function() {
       name: "Predictable Engineering of Signal-Dependent Cis-Regulatory Elements",
       link: "https://www.biorxiv.org/content/10.1101/2025.03.07.642002v1.full.pdf",
       authors: `Jake Cornwall-Scoones, Dirk Benzinger, Tianji Yu, Alberto Pezzotta, Andreas Sagner, Lina Gerontogianni, Shaun Bernadet, Elizabeth Finnie, Giulia LM Boezio, Hannah T Stuart, Manuela Melchionda, Oliver CK Inge, Bianca Dumitrascu, James Briscoe, M Joaquina Delás`,
-      tags: ["synthetic design", "gene regulation","development"],
+      tags: ["synthetic design", "gene regulation", "development"],
       source: "bioRxiv",
       icon: "assets/images/projects/gear.png",
       year: "2025"
     },
-    
+
     {
       name: "Gene-level alignment of single-cell trajectories",
       link: "https://www.nature.com/articles/s41592-024-02378-4",
@@ -35,13 +98,13 @@ $(document).ready(function() {
       year: "2025"
     },
     {
-      name: "Dynamic cell fate plasticity and tissue integration drive functional synovial joint regeneration",
-      link: "https://www.biorxiv.org/content/10.1101/2024.12.12.628180v1",
-      authors: `Maria Blumenkrantz, Felicia Woron, Ernesto Gagarin, Everett Weinstein, Maryam H Kamel, Leonardo Campos, Agnieszka Geras, Troy Anderson, Julia Mo, Desmarie Sherwood, Maya Gwin, Bianca Dumitrascu, Nadeen O Chahine, Joanna Smeeton`,
+      name: "Dynamic cell fate plasticity and tissue reintegration drive functional adult synovial joint regeneration after complete resection",
+      link: "https://doi.org/10.1038/s41467-025-63596-8",
+      authors: `M Blumenkrantz, F Woron, E Gagarin, E Weinstein, MH Kamel, L Campos, ...`,
       tags: ["cell fate", "plasticity", "regeneration", "single-cell", "archetype analysis"],
-      source: "bioRxiv",
+      source: "Nature Communications 16 (1), 8570",
       icon: "assets/images/projects/onecell.png",
-      year: "2024"
+      year: "2025"
     },
     {
       name: "MarkerMap: nonlinear marker selection for single-cell studies",
@@ -99,7 +162,7 @@ $(document).ready(function() {
     },
     {
       name: "In silico tissue generation and power analysis for spatial omics",
-      link: "https://www.nature.com/articles/s41592-023-01766-67",
+      link: "https://doi.org/10.1038/s41592-023-01766-6",
       authors: "E.A.G. Baker, D. Schapiro, B. Dumitrascu, S. Vickovic, and A. Regev",
       tags: ["in silico tissue generation", "spatial omics"],
       source: "Nature Methods 20 (3), 424-431",
@@ -191,7 +254,7 @@ $(document).ready(function() {
           </a>
           <br>`;
       for (var j = 0; j < data[i].tags.length; j++) {
-        block += `<span style="padding:2px 6px; background: #e44c65; border-radius: 5px; pointer-events: none; margin-right: 2px;">${data[i].tags[j]}</span>`;
+        block += `<span style="padding:2px 6px; background: #e44c65; border-radius: 5px; pointer-events: none; margin-right: 2px; margin-bottom: 4px; display: inline-block; white-space: nowrap;">${data[i].tags[j]}</span>`;
       }
       block += `</div>`;
       table.innerHTML += block;
@@ -216,7 +279,7 @@ $(document).ready(function() {
   buildTables(PAPERS, YEARS);
 
   // Keyup event for search
-  $("#search-papers").on("keyup", function() {
+  $("#search-papers").on("keyup", function () {
     var val = $(this).val();
     var data = searchTables(PAPERS, val);
     buildTables(data, YEARS);
