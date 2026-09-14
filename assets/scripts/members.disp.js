@@ -14,6 +14,18 @@ const ACTIVE = [
         link: "https://cancerdynamics.columbia.edu/lambda-moses",
     },
     {
+        name: "Wilson Gregory",
+        title: "Postdoctoral Researcher",
+        image: "assets/images/members/wilson-gregory.jpg",
+        link: "https://www.cis.jhu.edu/~wgregor4/",
+    },
+    {
+        name: "Emilie Wendenborg",
+        title: "Postdoctoral Researcher",
+        image: "assets/images/members/emilie-wedenborg.jpg",
+        link: "https://www.linkedin.com/in/emiliewedenborg/",
+    },
+    {
         name: "Özgür Yılmaz Beker",
         title: "Doctoral Student",
         image: "assets/images/members/ozgur-yilmaz-beker.png",
@@ -32,10 +44,10 @@ const ACTIVE = [
         link: "https://cancerdynamics.columbia.edu/michael-p-pressler",
     },
     {
-        name: "Merwan Oussal",
-        title: "Research Intern",
-        image: "assets/images/projects/development.png",
-        link: "https://www.morpho-lab.com/members.html",
+        name: "Stas Syrota",
+        title: "Visiting Doctoral Student",
+        image: "assets/images/members/stas-syrota.jpg",
+        link: "https://syrota.me/",
     },
     {
         name: "Marissa Esteban",
@@ -107,6 +119,12 @@ const ALUMNI = [
         title: " Rotational PhD student in Systems Biology",
         image: "assets/images/members/dingcheng-yi.jpg",
         link: "https://purkinje-cell.github.io/",
+    },
+    {
+        name: "Merwan Oussal",
+        title: "Research Intern",
+        image: "assets/images/projects/development.png",
+        link: "https://www.morpho-lab.com/members.html",
     },
 ]
 
