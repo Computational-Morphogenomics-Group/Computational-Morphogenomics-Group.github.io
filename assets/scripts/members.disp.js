@@ -17,7 +17,7 @@ const ACTIVE = [
         name: "Wilson Gregory",
         title: "Postdoctoral Researcher",
         image: "assets/images/members/wilson-gregory.jpg",
-        link: "https://www.cis.jhu.edu/~wgregor4/",
+        link: "https://wilsongregory.github.io/",
     },
     {
         name: "Emilie Wendenborg",
